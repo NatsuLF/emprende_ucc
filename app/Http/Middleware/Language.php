@@ -1,14 +1,12 @@
-<?php
-
-namespace App\Http\Middleware;
+<?php namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Routing\Redirector;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Application;
-use Illuminate\Contracts\Routing\Middleware;
+// use Illuminate\Contracts\Routing\Middleware;
 
-class Language {
+class Language /*implements Middleware*/ {
 
     public function __construct(Application $app, Redirector $redirector, Request $request) {
         $this->app = $app;
@@ -23,7 +21,6 @@ class Language {
      * @param  \Closure  $next
      * @return mixed
      */
-
     public function handle($request, Closure $next)
     {
         // Make sure current locale exists.
@@ -35,10 +32,8 @@ class Language {
 
             return $this->redirector->to(implode('/', $segments));
         }
-
         $this->app->setLocale($locale);
 
         return $next($request);
     }
-
 }

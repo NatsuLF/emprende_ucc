@@ -15,14 +15,13 @@ class HomeController extends Controller {
 	|
 	*/
 
-	public function index()
+	public function home()
 	{
-		return view('hello');
+		return view('home');
 	}
 
-	public function locale()
+	public function catalogo()
 	{
-		return view('locale');
+		return view('catalogo');
 	}
-
 }

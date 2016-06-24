@@ -35,6 +35,7 @@ class RouteServiceProvider extends ServiceProvider {
      *
      * @return void
      */
+
 /*    public function map(Router $router, Request $request)
     {
         $locale = $request->segment(1);
@@ -43,15 +44,15 @@ class RouteServiceProvider extends ServiceProvider {
         $router->group(['namespace' => $this->namespace, 'prefix' => $locale], function($router) {
             require app_path('Http/routes.php');
         });
-    }
-*/
+    }*/
+
     public function map(Router $router)
     {
         $this->mapWebRoutes($router);
 
         //
     }
-    
+
     protected function mapWebRoutes(Router $router)
     {
         $router->group([

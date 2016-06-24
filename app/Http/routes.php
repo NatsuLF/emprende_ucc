@@ -1,6 +1,5 @@
 <?php
 
-use App;
 use Illuminate\Http\Request;
 
 /*
@@ -20,6 +19,10 @@ use Illuminate\Http\Request;
 // Route::get('welcome/{locale?}', function ($locale) {
 //     App::setLocale($locale);
 // });
+
+/*Route::get('/', ['as' => 'home', 'uses' => 'HomeController@home']);
+Route::get('/catalogo', ['as' => 'catalogo', 'uses' => 'HomeController@catalogo']);*/
+
 
 Route::get('/', function() {
 	return view('home');
