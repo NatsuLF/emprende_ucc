@@ -29,9 +29,6 @@
         ]
     },
     "scripts": {
-        "compile": [
-            "bower install"
-        ],
         "post-root-package-install": [
             "php -r \"copy('.env.example', '.env');\""
         ],
@@ -40,11 +37,13 @@
         ],
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
-            "php artisan optimize"
+            "php artisan optimize",
+            "$(npm bin -q)/bower install"
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan optimize"
+            "php artisan optimize",
+            "$(npm bin -q)/bower install"
         ]
     },
     "config": {
