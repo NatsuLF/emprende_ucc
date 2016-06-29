@@ -11,7 +11,6 @@
     </head>
     <body>
         @include('shared.navbar')
-        @include('shared.social')
             <div class="container">
                 <div class="row">
                     @yield('content')

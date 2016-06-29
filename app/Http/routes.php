@@ -43,3 +43,16 @@ Route::get('/contacto', function() {
 Route::get('/contacto', 'ContactController@contact');
 
 Route::post('sendMail', 'MailController@sendMail');
+
+// TAGS
+Route::get('tags', 'TagController@index');
+
+Route::get('tags/create', 'TagController@create');
+
+Route::post('tags', 'TagController@save');
+
+Route::get('tags/{tag}', 'TagController@edit');
+
+Route::post('tags/{tag}', 'TagController@update');
+
+Route::delete('tags/{tag}', 'TagController@delete');
