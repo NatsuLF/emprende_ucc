@@ -9,11 +9,17 @@ use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\Http\Middleware\Session;
 use Illuminate\Support\Facades\Input;
+use app\Http\Middleware\Authenticate;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
 
 class TagController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $tags = DB::table('tags')->get();

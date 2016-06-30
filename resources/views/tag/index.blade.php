@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app_backend')
 
 @section('content')
     @if (count($tags) > 0)

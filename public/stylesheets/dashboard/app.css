@@ -1,8 +1,6 @@
-body {
-	padding-top: 75px;
-}
+body { padding-top: 70px; }
 
 .btn-back {
-	display: block;
-	margin-bottom: 15px;
+    display: block;
+    margin-bottom: 15px;
 }

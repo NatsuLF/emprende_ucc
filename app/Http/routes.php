@@ -50,3 +50,6 @@ Route::get('tags/{tag}', 'TagController@edit');
 Route::post('tags/{tag}', 'TagController@update');
 
 Route::delete('tags/{tag}', 'TagController@delete');
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
