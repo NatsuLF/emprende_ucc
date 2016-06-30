@@ -8,7 +8,7 @@
         <button type="submit" class="btn btn-primary">Crear</button>
     </form>
 
-    @include('shared.message');
+    @include('shared.message')
 
     @include('common.errors')
 @endsection
