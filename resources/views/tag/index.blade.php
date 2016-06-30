@@ -11,7 +11,7 @@
                 @foreach ($tags as $tag)
                     <tr>
                         <td>
-                            <a href="#">
+                            <a href="{{ 'tags/' .$tag->id }}">
                                 {{ $tag->name }}
                             </a>
                         </td>
@@ -29,6 +29,8 @@
                 @endforeach
             </tbody>
         </table>
+
+        @include('shared.message')
     @else
         <p>Nada que mostrar</p>
     @endif

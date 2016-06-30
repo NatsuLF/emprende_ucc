@@ -28,7 +28,7 @@ class TagController extends Controller
     public function save(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'name' => 'required'
+            'name' => 'required',
         ]);
 
 
@@ -43,23 +43,40 @@ class TagController extends Controller
         $tags->name = $request->name;
         $tags->save();
 
-        return redirect()->action('TagController@create');
+        return redirect()->action('TagController@create')->with('message', 'Creado correctamente!');
     }
 
-    public function edit(Request $req, Tag $tag)
+    public function edit(Tag $tag)
     {
-
+        return view('tag.edit', ['tag' => $tag]);
     }
 
-    public function update(Request $req, Tag $tag)
+    public function update(Request $request, Tag $tag)
     {
+        $rules = [
+            'name' => 'required'
+        ];
 
+        $validator = Validator::make($request->all(), $rules);
+
+        if ($validator->fails())
+        {
+            return redirect('tags/' . $tag)
+                ->withInput()
+                ->withErrors($validator);
+        }
+
+        $tag->name = $request->name;
+        $tag->save();
+
+        return redirect()->action('TagController@index')->with('message', 'Actualizado!');
     }
 
-    public function delete(Request $req, Tag $tag)
+    public function delete(Tag $tag)
     {
         $tag->delete();
-        return redirect()->action('TagController@index');
+
+        return redirect()->action('TagController@index')->with('message', 'Eliminado!');
     }
 }
 

@@ -13,33 +13,27 @@ use Illuminate\Http\Request;
 |
 */
 
-// $router->get('locale', ['as' => 'catalogo', 'uses' => 'HomeController@locale']);
-// $router->get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
-
 // Route::get('welcome/{locale?}', function ($locale) {
 //     App::setLocale($locale);
 // });
 
-/*Route::get('/', ['as' => 'home', 'uses' => 'HomeController@home']);
-Route::get('/catalogo', ['as' => 'catalogo', 'uses' => 'HomeController@catalogo']);*/
-
-
 Route::get('/', function() {
-	return view('home');
+    return view('home');
 });
 
 Route::get('/catalogo', function() {
-	return view('catalogo');
+    return view('catalogo');
 });
 
 Route::get('/servicios', function() {
-	return view('servicios');
+    return view('servicios');
 });
 
 Route::get('/contacto', function() {
-	return view('contacto');
+    return view('contacto');
 });
 
+// MAIL
 Route::get('/contacto', 'ContactController@contact');
 
 Route::post('sendMail', 'MailController@sendMail');
