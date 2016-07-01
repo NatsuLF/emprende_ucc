@@ -60,12 +60,12 @@ Route::auth();
 
 Route::get('home_app', 'HomeController@index');
 
-//POST
+// POST
 Route::get('posts', 'PostController@index');
 
 Route::get('posts/create', 'PostController@create');
 
-Route::post('posts', 'PostController@save');
+Route::post('posts', 'PostController@store');
 
 Route::get('posts/{pts}', 'PostController@edit');
 
