@@ -19,7 +19,7 @@
 				@yield('content')
 			</div>
 			<div class="col-md-2">
-				<a href="{{ 'tags/create' }}" class="btn btn-primary btn-block">Crear</a>
+				<a href="{{ $_SERVER['REQUEST_URI'] . '/create' }}" class="btn btn-primary btn-block">Crear</a>
 			</div>
 		</div>
 	</div>
