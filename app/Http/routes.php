@@ -18,7 +18,7 @@ use Illuminate\Http\Request;
 // });
 
 Route::get('/', function() {
-    return view('home');
+    return view('home_app');
 });
 
 Route::get('/catalogo', function() {
@@ -31,6 +31,10 @@ Route::get('/servicios', function() {
 
 Route::get('/contacto', function() {
     return view('contacto');
+});
+
+Route::get('/login', function() {
+	return view('/auth/login');
 });
 
 // MAIL
@@ -50,6 +54,21 @@ Route::get('tags/{tag}', 'TagController@edit');
 Route::post('tags/{tag}', 'TagController@update');
 
 Route::delete('tags/{tag}', 'TagController@delete');
+
+// AUTH
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::get('home_app', 'HomeController@index');
+
+//POST
+Route::get('posts', 'PostController@index');
+
+Route::get('posts/create', 'PostController@create');
+
+Route::post('posts', 'PostController@save');
+
+Route::get('posts/{pts}', 'PostController@edit');
+
+Route::post('posts/{pts}', 'PostController@update');
+
+Route::delete('posts/{pts}', 'PostController@delete');
