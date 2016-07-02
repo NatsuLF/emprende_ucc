@@ -33,3 +33,11 @@ a > .fa {
 	padding-top: 10px;
 	text-decoration: none;
 }
+
+.navbar-brand > img {
+	widows: 50px;
+	height: 50px;
+    display: block;
+    padding: 0px;
+    margin-top: -11px;
+}

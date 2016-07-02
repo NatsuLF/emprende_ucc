@@ -19,11 +19,11 @@
 				@yield('content')
 			</div>
 			<div class="col-md-2">
-				<a href="{{ $_SERVER['REQUEST_URI'] . '/create' }}" class="btn btn-primary btn-block">Crear</a>
+				<a href="{{ $_SERVER['REQUEST_URI'] . '/create' }}" class="btn btn-primary btn-block"><i class="fa fa-plus-circle fa-fw" aria-hidden="true"></i>&nbsp; Crear</a>
 			</div>
 		</div>
 	</div>
 	<script src="components/jquery/dist/jquery.min.js"></script>
-	<script src="components/bootstrap/js/dropdown.js"></script>
+	<script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

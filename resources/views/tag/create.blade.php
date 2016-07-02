@@ -5,7 +5,7 @@
         {{ csrf_field() }}
         @include('tag.form')
 
-        <button type="submit" class="btn btn-primary">Crear</button>
+        <button type="submit" class="btn btn-primary"><i class="fa fa-plus-circle fa-fw" aria-hidden="true"></i>&nbsp; Crear</button>
     </form>
 
     @include('shared.message')

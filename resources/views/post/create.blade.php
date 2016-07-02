@@ -15,7 +15,7 @@
 @endsection
 
 @section('tags')
-    <h3><span class="label label-primary">Categorias</span></h3>
+    <h3><span class="label label-primary"><i class="fa fa-tags fa-fw" aria-hidden="true"></i>&nbsp; Categorias</span></h3>
     @foreach ($tags as $tag)
         <div class="checkbox">
             <label>

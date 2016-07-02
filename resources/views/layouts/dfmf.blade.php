@@ -12,7 +12,7 @@
 <body>
 	<div class="col-md-2"></div>
 	<div class="col-md-7">
-		<a href="{{ '/posts' }}" class="btn-back">Regresar</a>
+		<a href="{{ '/posts' }}" class="btn-back btn btn-primary"><i class="fa fa-arrow-left fa-fw" aria-hidden="true"></i>&nbsp; Regresar</a>
 
 		@yield('content')
 	</div>

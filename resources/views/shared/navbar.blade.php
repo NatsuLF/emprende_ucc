@@ -1,27 +1,24 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-        <!--
-        <a class="navbar-brand" href="/">
-            <img width="100" height="100" alt="Brand"
-            src="https://dl.dropboxusercontent.com/s/jsl5l56atdr7fso/hexagon-23431_960_720.png?dl=0">
-        </a>
-        -->
-        <a class="colmena navbar-brand" href="/">LA COLMENA</a>
+        {{-- <a class="colmena navbar-brand" href="/">LA COLMENA</a> --}}
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+          <a class="navbar-brand" href="{{ url('/') }}">
+            <img alt="Brand" src="https://dl.dropboxusercontent.com/s/zkqbixpz601xwx3/abeja.png?dl=0">
+          </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="/">Nosotros</a></li>
-                <li class=""><a href="/catalogo">Catalogo</a></li>
-                <li class=""><a href="/servicios">Servicios</a></li>
-                <li class=""><a href="/contacto">Contactanos</a></li>
-                <li class=""><a href="/tags">Login</a></li>
+                <li class="active"><a href="/"><i class="fa fa-home fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Nosotros</a></li>
+                <li class=""><a href="/catalogo"><i class="fa fa-book fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Catalogo</a></li>
+                <li class=""><a href="/servicios"><i class="fa fa-suitcase fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Servicios</a></li>
+                <li class=""><a href="/contacto"><i class="fa fa-envelope fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Contactanos</a></li>
+                <li class=""><a href="/login"><i class="fa fa-sign-in fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Login</a></li>
             </ul>
         </div>
     </div>
