@@ -1,21 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
-
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
-
-// Route::get('welcome/{locale?}', function ($locale) {
-//     App::setLocale($locale);
-// });
 
 Route::get('/', function() {
     return view('home_app');
@@ -67,8 +53,8 @@ Route::get('posts/create', 'PostController@create');
 
 Route::post('posts', 'PostController@store');
 
-Route::get('posts/{pts}', 'PostController@edit');
+Route::get('post/{post}', 'PostController@edit');
 
-Route::post('posts/{pts}', 'PostController@update');
+Route::post('post/{post}', 'PostController@update');
 
-Route::delete('posts/{pts}', 'PostController@delete');
+Route::delete('post/{post}', 'PostController@delete');

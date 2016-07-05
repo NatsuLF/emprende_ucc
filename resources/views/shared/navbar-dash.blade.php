@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ url('/posts') }}">Dashboard</a>
+            <a class="navbar-brand" href="{{ url('/posts') }}">Panel de administración</a>
         </div>
 
         <ul class="nav navbar-nav navbar-right">
@@ -21,7 +21,7 @@
 
                     <ul class="dropdown-menu" role="menu">
                         <li>
-                            <a href="{{ url('/tags') }}">
+                            <a href="{{ url('/posts') }}">
                                 <i class="fa fa-btn fa-user"></i> Profile
                             </a>
                         </li>

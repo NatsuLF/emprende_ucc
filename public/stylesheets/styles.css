@@ -25,6 +25,12 @@ div.container-fluid {
 	color: #000000;
 }
 
+.btn-primary {
+	background-color: #FFD600;
+	border-color: #000000;
+	color: #000000;
+}
+
 .panel-primary {
 	border-color: #000000;
 }

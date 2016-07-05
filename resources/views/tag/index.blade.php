@@ -3,16 +3,24 @@
 @section('content')
     @if (count($tags) > 0)
         <table class="table table-striped table-hover table-bordered">
+            <colgroup>
+                <col span="1" style="width: 90%;">
+                <col span="1" style="width: 5%;">
+                <col span="1" style="width: 5%;">
+            </colgroup>
             <thead>
                 <th>Etiquetas</th>
-                <th width="1"></th>
+                <th></th>
             </thead>
             <tbody>
                 @foreach ($tags as $tag)
                     <tr>
                         <td>
-                            <a href="{{ 'tags/' .$tag->id }}">
                                 {{ $tag->name }}
+                        </td>
+                        <td>
+                            <a class="btn btn-primary btn-xs" href="{{ 'tags/' .$tag->id }}">
+                            <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
                             </a>
                         </td>
                         <td>
@@ -21,7 +29,7 @@
                                 {{ method_field('DELETE') }}
 
                                 <button type="submit" class="btn btn-danger btn-xs" {{-- data-toggle="modal" href='#modal-id --}}'>
-                                    <i class="fa fa-trash"></i>
+                                    <i class="fa fa-trash fa-lg"></i>
                                 </button>
 {{--                                 <div class="modal fade" id="modal-id">
                                     <div class="modal-dialog">

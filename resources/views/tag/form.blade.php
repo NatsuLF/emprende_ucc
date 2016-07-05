@@ -1,5 +1,5 @@
 <div class="form-group">
-    <label for="name">Nombre de la etqiueta</label>
+    <label for="name">Nombre de la etiqueta</label>
     <input
         type="text"
         name="name"

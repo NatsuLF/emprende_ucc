@@ -9,7 +9,8 @@
                 <span class="icon-bar"></span>
             </button>
           <a class="navbar-brand" href="{{ url('/') }}">
-            <img alt="Brand" src="https://dl.dropboxusercontent.com/s/zkqbixpz601xwx3/abeja.png?dl=0">
+            {{-- <img alt="Brand" src="https://dl.dropboxusercontent.com/s/zkqbixpz601xwx3/abeja.png?dl=0"> --}}
+            <img src="http://lacolmenaonline.com/wp-content/uploads/2016/04/La_colmena_logo-2.png">
           </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">

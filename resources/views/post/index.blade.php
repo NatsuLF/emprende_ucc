@@ -1,27 +1,44 @@
 @extends('layouts.app_backend')
 
 @section('content')
-    @if (count($post) > 0)
+    @if (count($posts) > 0)
         <table class="table table-striped table-hover table-bordered">
+            <colgroup>
+                <col span="1" style="width: 85%;">
+                <col span="1" style="width: 5%;">
+                <col span="1" style="width: 5%;">
+                <col span="1" style="width: 5%;">
+            </colgroup>
             <thead>
-                <th>Etiquetas</th>
-                <th width="1"></th>
+                <th>Posts</th>
+                <th></th>
+                <th></th>
             </thead>
             <tbody>
-                @foreach ($post as $pts)
+                @foreach ($posts as $post)
                     <tr>
                         <td>
-                            <a class="post" href="{{ 'post/' .$pts->id }}">
-                                {{ $pts->title }}
+                            {{ $post->title }}
+                        </td>
+                        <td>
+                            @if ($post->published == TRUE)
+                                <i class="fa fa-check-square-o fa-lg fa-fw" aria-hidden="true"></i>
+                            @else
+                                <i class="fa fa-file-text-o fa-lg fa-fw" aria-hidden="true"></i>
+                            @endif
+                        </td>
+                        <td>
+                            <a class="btn btn-primary btn-xs" href="{{ 'post/' .$post->id }}">
+                            <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
                             </a>
                         </td>
                         <td>
-                            <form action="{{ url('post/'.$pts->id) }}" method="post">
+                            <form action="{{ url('post/'. $post->id) }}" method="post">
                                 {{ csrf_field() }}
                                 {{ method_field('DELETE') }}
 
                                 <button type="submit" class="btn btn-danger btn-xs">
-                                    <i class="fa fa-trash"></i>
+                                    <i class="fa fa-trash fa-lg"></i>
                                 </button>
                             </form>
                         </td>
