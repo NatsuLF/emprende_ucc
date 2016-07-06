@@ -6,7 +6,6 @@ use DB;
 use App\Tag;
 use App\Post;
 
-
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\Http\Middleware\Session;
@@ -19,11 +18,6 @@ use Illuminate\Contracts\Auth\Authenticatable;
 
 class PostController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     public function index()
     {
         $posts = DB::table('posts')->get();
@@ -74,16 +68,10 @@ class PostController extends Controller
         return redirect()->action('PostController@create')->with('message', 'Creado !');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show()
+    public function blog()
     {
         $posts = DB::table('posts')->get();
-        return view('post.news', ['posts' => $posts]);
+        return view('news', ['posts' => $posts]);
     }
 
     public function edit(Post $post)

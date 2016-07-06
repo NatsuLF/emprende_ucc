@@ -20,7 +20,7 @@ Route::get('/contacto', function() {
 });
 
 Route::get('/login', function() {
-	return view('/auth/login');
+    return view('/auth/login');
 });
 
 // MAIL
@@ -47,14 +47,16 @@ Route::auth();
 Route::get('home_app', 'HomeController@index');
 
 // POST
-Route::get('posts', 'PostController@index');
+Route::get('/blog', 'PostController@blog');
 
-Route::get('posts/create', 'PostController@create');
+Route::get('posts', ['uses' => 'PostController@index', 'middleware' => 'auth']);
 
-Route::post('posts', 'PostController@store');
+Route::get('posts/create', ['uses' => 'PostController@create', 'middleware' => 'auth']);
 
-Route::get('post/{post}', 'PostController@edit');
+Route::post('posts', ['uses' => 'PostController@store', 'middleware' => 'auth']);
 
-Route::post('post/{post}', 'PostController@update');
+Route::get('post/{post}', ['uses' => 'PostController@edit', 'middleware' => 'auth']);
 
-Route::delete('post/{post}', 'PostController@delete');
+Route::post('post/{post}', ['uses' => 'PostController@update', 'middleware' => 'auth']);
+
+Route::delete('post/{post}', ['uses' => 'PostController@delete', 'middleware' => 'auth']);
