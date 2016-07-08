@@ -70,7 +70,8 @@ class PostController extends Controller
 
     public function blog()
     {
-        $posts = DB::table('posts')->get();
+        $posts = Post::where('published', '=', TRUE)->orderBy('created_at', 'desc')->get();
+
         return view('news', ['posts' => $posts]);
     }
 
@@ -127,6 +128,13 @@ class PostController extends Controller
         $post->delete();
 
         return redirect()->action('PostController@index')->with('message', 'Eliminado !');
+    }
+
+    public function details(Post $post)
+    {
+        $posts = Post::where('id', '=', $post->id)->get();
+
+        return view('detail_post', ['posts' => $posts]);
     }
 
     private function get_tags_id($tags)

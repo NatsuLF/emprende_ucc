@@ -6,23 +6,23 @@ use Illuminate\Support\ServiceProvider;
 
 class ViewComposerServiceProvider extends ServiceProvider {
 
-	/**
-	 * Register the service provider.
-	 *
-	 * @return void
-	 */
-	public function boot(Request $request) {
-		$this->changeLocaleUrl($request);
-	}
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function boot(Request $request) {
+        $this->changeLocaleUrl($request);
+    }
 
-	public function register() {}
+    public function register() {}
 
-	protected function changeLocaleUrl($request) {
-		$segments = $request->segments();
-		$segments[0] = '%s';
+    protected function changeLocaleUrl($request) {
+        $segments = $request->segments();
+        $segments[0] = '%s';
 
-		// Give siteLocale variable to all views.
-		view()->share('changeLocaleUrl', implode('/', array_map('urldecode', $segments)));
-	}
+        // Give siteLocale variable to all views.
+        view()->share('changeLocaleUrl', implode('/', array_map('urldecode', $segments)));
+    }
 
 }

@@ -12,9 +12,13 @@
 
 <div class="form-group">
     <label for="body">Contenido del Post</label>
-    <textarea id="body" name="body" class="textarea form-control" required>
+    <textarea id="textarea" name="body" class="textarea form-control" required>
         @if (isset($post->body))
             {{ $post->body }}
         @endif
      </textarea>
+       <script type="text/javascript">
+            $('textarea').wysihtml5();
+            $('textarea').val();
+       </script>
 </div>

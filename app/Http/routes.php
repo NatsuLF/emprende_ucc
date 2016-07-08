@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
 
 Route::get('/', function() {
+    return view('news');
+});
+
+Route::get('/nosotros', function() {
     return view('home_app');
 });
 
@@ -44,10 +48,12 @@ Route::delete('tags/{tag}', 'TagController@delete');
 // AUTH
 Route::auth();
 
-Route::get('home_app', 'HomeController@index');
+Route::get('blog', 'HomeController@index');
 
 // POST
-Route::get('/blog', 'PostController@blog');
+Route::get('/', 'PostController@blog');
+
+Route::get('/blog/{post}', 'PostController@details');
 
 Route::get('posts', ['uses' => 'PostController@index', 'middleware' => 'auth']);
 

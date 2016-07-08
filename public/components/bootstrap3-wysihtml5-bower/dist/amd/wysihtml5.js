@@ -1,7 +1,7 @@
 define('wysihtml5', function (require, exports, module) {
             var $     = require('jquery'),
                 rangy = require('rangy');
-
+}
 // TODO: in future try to replace most inline compability checks with polyfills for code readability 
 
 // element.textContent polyfill.

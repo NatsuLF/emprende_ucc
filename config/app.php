@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'UTC-6',
 
     /*
     |--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'locale' => 'es',
+    'locale' => 'es_NI.UTF-8',
     // 'locales' => ['es' => 'Spanish', 'en' => 'English'],
 
     /*
@@ -79,7 +79,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'es',
+    'fallback_locale' => 'es_NI.UTF-8',
 
     /*
     |--------------------------------------------------------------------------
@@ -204,5 +204,4 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
-
 ];

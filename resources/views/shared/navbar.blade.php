@@ -15,8 +15,8 @@
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class=""><a href="/blog"><i class="fa fa-quote-right fa-lg" aria-hidden="true"></i> Blog</a></li>
-                <li class="active"><a href="/"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Nosotros</a></li>
+                <li class="active"><a href="/"><i class="fa fa-newspaper-o fa-lg" aria-hidden="true"></i> Blog</a></li>
+                <li class=""><a href="/nosotros"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Nosotros</a></li>
                 <li class=""><a href="/catalogo"><i class="fa fa-book fa-lg" aria-hidden="true"></i> Catalogo</a></li>
                 <li class=""><a href="/servicios"><i class="fa fa-suitcase fa-lg" aria-hidden="true"></i> Servicios</a></li>
                 <li class=""><a href="/contacto"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> Contactanos</a></li>

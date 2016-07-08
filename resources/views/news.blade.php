@@ -9,28 +9,34 @@
         </div>
     </div>
 
-@if (count($posts) > 0  )
-    @foreach ($posts as $post)
-    <div class="container-fluid">
-        <div class="col-md-8">
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <h3 class="panel-title">{{ $post->title }}</h3>
-                    <div class="tags">
-                        {{-- {{ $post->tags->name }} --}}
+    @if (count($posts) > 0)
+        @foreach ($posts as $post)
+            <div class="col-md-8 col-sm-6 col-xs-4">
+                <div class="panel panel-primary panel-news">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            {{ $post->title }}
+                        </h3>
+                        <p>
+                            @foreach ($post->tags as $tag)
+                                <span class="label label-success">{{ $tag->name }}</span>
+                            @endforeach
+                        </p>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                        {!! $post->body !!}
+                        </p>
                     </div>
                 </div>
-                <div class="panel-body">
-                    <p>
-                    {!! $post->body !!}
-                    </p>
+                <div class="form-gruop btn-read_more">
+                    <a href="{{ '/blog/' . $post->id }}" class="btn btn-primary" {{ ['target' => '_blank'] }}>
+                    Seguir leyendo <i class="fa fa-caret-square-o-right" aria-hidden="true"></i></a>
                 </div>
             </div>
-        </div>
-    </div>
-@endforeach
-@else
-        <p>Nada que mostrar</p>
-@endif
-
+        @endforeach
+    @else
+            <p>Nada que mostrar</p>
+    @endif
 @endsection

@@ -6,8 +6,8 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{ asset('components/bootstrap/dist/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('components/font-awesome/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('stylesheets/dashboard/app.css') }}">
     <link rel="stylesheet" href="{{ asset('components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.css') }}"></link>
+    <link rel="stylesheet" href="{{ asset('stylesheets/dashboard/app.css') }}">
 </head>
 <body>
     <div class="col-md-2"></div>
@@ -24,7 +24,7 @@
     <script src="{{ asset('components/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ asset('components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('components/handlebars/handlebars.runtime.min.js') }}"></script>
-    <script src="{{ asset('components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.js') }}"></script>
+        <script src="{{ asset('components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.js') }}"></script>
     <script>
         $('.textarea').wysihtml5();
 
