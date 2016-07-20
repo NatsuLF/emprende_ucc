@@ -99,7 +99,7 @@ class PostController extends Controller
         $validator = Validator::make($request->all(), $rules);
 
         if ($validator->fails()) {
-            return redirect('post/' . $post->id)
+            return redirect('posts/' . $post->id)
                 ->withInput()
                 ->withErrors($validator);
         }

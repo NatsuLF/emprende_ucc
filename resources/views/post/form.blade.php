@@ -19,6 +19,5 @@
      </textarea>
        <script type="text/javascript">
             $('textarea').wysihtml5();
-            $('textarea').val();
        </script>
 </div>

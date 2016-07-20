@@ -1,20 +1,16 @@
-@extends('layouts.dfmf')
+@extends('layouts.items')
 
-@section('title', 'Editar post')
+@section('title', 'Editar producto')
 
 @section('content')
-    <form action="{{ '/posts/' . $post->id }}" id="form" method="post" autocomplete="off">
+    <form action="{{ '/items/' . $item->id }}" id="form" method="post" autocomplete="off">
         {{ csrf_field() }}
         <input type="hidden" name="id">
-        @include('post.form')
+        @include('item.form')
 
         <button type="submit" class="btn btn-primary">Actualizar</button>
     </form>
 
     @include('shared.message')
     @include('common.errors')
-@endsection
-
-@section('tags')
-    @include('shared.tags')
 @endsection

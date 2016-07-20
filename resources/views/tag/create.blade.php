@@ -1,5 +1,7 @@
 @extends('layouts.dfm')
 
+@section('title', 'Agregar categoria')
+
 @section('content')
     <form action="{{ '/tags' }}" method="post" autocomplete="off">
         {{ csrf_field() }}

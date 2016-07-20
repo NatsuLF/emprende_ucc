@@ -1,17 +1,18 @@
 @extends('layouts.master')
 
+@section('title', 'Blog')
+
 @section('content')
     <div class="col-md-11">
         @foreach ($posts as $post)
             <div class="jumbotron">
-                <div class="">
                 <h1>{{ $post->title }}</h1>
-                <cite>{{ $post->user->name }}</cite>
-                <small> {{ $post->created_at->format('M j, Y') }}</small>
+                    <cite>{{ $post->user->name }}</cite>
+                    <small> {{ $post->created_at->format('M j, Y') }}</small>
                 @foreach ($post->tags as $tag)
                     <span class="label label-success">{{ $tag->name }}</span>
                 @endforeach
-            </div>
+
                 <p>{!! $post->body !!}</p>
             </div>
         @endforeach

@@ -1,41 +1,33 @@
 @extends('layouts.app_backend')
 
-@section('title', 'Posts')
+@section('title', 'Productos')
 
 @section('content')
-    @if (count($posts) > 0)
+    @if (count($items) > 0)
         <table class="table table-striped table-hover table-bordered">
             <colgroup>
-                <col span="1" style="width: 85%;">
-                <col span="1" style="width: 5%;">
+                <col span="1" style="width: 90%;">
                 <col span="1" style="width: 5%;">
                 <col span="1" style="width: 5%;">
             </colgroup>
             <thead>
-                <th>Posts</th>
+                <th>Productos</th>
                 <th></th>
                 <th></th>
             </thead>
             <tbody>
-                @foreach ($posts as $post)
+                @foreach ($items as $item)
                     <tr>
                         <td>
-                            {{ $post->title }}
+                                {{ $item->name }}
                         </td>
                         <td>
-                            @if ($post->published == TRUE)
-                                <i class="fa fa-check-square-o fa-lg fa-fw" aria-hidden="true"></i>
-                            @else
-                                <i class="fa fa-file-text-o fa-lg fa-fw" aria-hidden="true"></i>
-                            @endif
-                        </td>
-                        <td>
-                            <a class="btn btn-primary btn-xs" href="{{ 'posts/' .$post->id }}">
+                            <a class="btn btn-primary btn-xs" href="{{ url('items/' . $item->id) }}">
                             <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
                             </a>
                         </td>
                         <td>
-                            <form action="{{ url('posts/'. $post->id) }}" method="post">
+                            <form action="{{ url('items/'.$item->id) }}" method="post">
                                 {{ csrf_field() }}
                                 {{ method_field('DELETE') }}
 

@@ -1,5 +1,7 @@
 @extends('layouts.dfmf')
 
+@section('title', 'Agregar post')
+
 @section('content')
     <form action="{{ '/posts' }}" id="form" method="post" autocomplete="off">
         {{ csrf_field() }}

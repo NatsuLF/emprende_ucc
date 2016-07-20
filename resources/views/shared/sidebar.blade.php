@@ -6,7 +6,7 @@
         <a href="{{ url('/tags') }}"><i class="fa fa-tags  fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Categorias</a>
     </li>
     <li role="presentation" class="{{ $controller == 'ItemController' ? 'active' : 'no-active' }}">
-        <a href="#"><i class="fa fa-shopping-bag fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Productos</a>
+        <a href="{{ url('/items') }}"><i class="fa fa-shopping-bag fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Productos</a>
     </li>
 </ul>
 

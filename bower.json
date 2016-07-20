@@ -17,6 +17,8 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap3-wysihtml5-bower": "^0.3.3"
+    "font-awesome": "Font-Awesome#^4.6.3",
+    "bootstrap": "^3.3.6",
+    "select2": "^4.0.3"
   }
 }

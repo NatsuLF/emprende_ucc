@@ -37,6 +37,7 @@ Route::get('tags', 'TagController@index');
 
 Route::get('tags/create', 'TagController@create');
 
+
 Route::post('tags', 'TagController@save');
 
 Route::get('tags/{tag}', 'TagController@edit');
@@ -48,21 +49,42 @@ Route::delete('tags/{tag}', 'TagController@delete');
 // AUTH
 Route::auth();
 
+
+// POST - Public
 Route::get('blog', 'HomeController@index');
 
-// POST
 Route::get('/', 'PostController@blog');
 
 Route::get('/blog/{post}', 'PostController@details');
 
+// POST - Auth
 Route::get('posts', ['uses' => 'PostController@index', 'middleware' => 'auth']);
 
 Route::get('posts/create', ['uses' => 'PostController@create', 'middleware' => 'auth']);
 
 Route::post('posts', ['uses' => 'PostController@store', 'middleware' => 'auth']);
 
-Route::get('post/{post}', ['uses' => 'PostController@edit', 'middleware' => 'auth']);
+Route::get('posts/{post}', ['uses' => 'PostController@edit', 'middleware' => 'auth']);
 
-Route::post('post/{post}', ['uses' => 'PostController@update', 'middleware' => 'auth']);
+Route::post('posts/{post}', ['uses' => 'PostController@update', 'middleware' => 'auth']);
 
-Route::delete('post/{post}', ['uses' => 'PostController@delete', 'middleware' => 'auth']);
+Route::delete('posts/{post}', ['uses' => 'PostController@delete', 'middleware' => 'auth']);
+
+
+// ITEMS - Public
+Route::get('catalogo', 'ItemController@catalogo');
+
+// ITEMS - Auth
+Route::get('items', ['uses' => 'ItemController@index', 'middleware' => 'auth']);
+
+Route::get('items/create', ['uses' => 'ItemController@create', 'middleware' => 'auth']);
+
+Route::post('items', ['uses' => 'ItemController@store', 'middleware' => 'auth']);
+
+Route::delete('items/{item}', ['uses' => 'ItemController@delete', 'middleware' => 'auth']);
+
+Route::get('items/{item}', ['uses' => 'ItemController@edit', 'middleware' => 'auth']);
+
+Route::post('items/{item}', ['uses' => 'ItemController@update', 'middleware' => 'auth']);
+
+Route::get('hello', 'ItemController@hello');

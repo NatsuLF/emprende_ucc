@@ -1,9 +1,11 @@
 @extends('layouts.master')
 
+@section('title', 'Blog')
+
 @section('content')
     <div class="jumbotron">
         <div class="container-fluid">
-            <h1>Hola, Bienvenid@ !!!</h1>
+            <h1>Hola, Bienvenido !!!</h1>
             <p>En esta area podras informarte acerca de las diversas actividades que realizamos,
             ademas de publicar contenidos que te ayudaran a entender de que se trata la apicultura. Esperemos que disfrutes de nuestro pequeño Blog !!!</p>
         </div>
@@ -31,8 +33,9 @@
                     </div>
                 </div>
                 <div class="form-gruop btn-read_more">
-                    <a href="{{ '/blog/' . $post->id }}" class="btn btn-primary" {{ ['target' => '_blank'] }}>
-                    Seguir leyendo <i class="fa fa-caret-square-o-right" aria-hidden="true"></i></a>
+                    <a href="{{ '/blog/' . $post->id }}" class="btn btn-primary">
+                    Seguir leyendo <i class="fa fa-caret-square-o-right" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
         @endforeach

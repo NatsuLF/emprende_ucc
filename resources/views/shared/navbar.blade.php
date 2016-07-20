@@ -1,7 +1,6 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-        {{-- <a class="colmena navbar-brand" href="/">LA COLMENA</a> --}}
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -9,7 +8,6 @@
                 <span class="icon-bar"></span>
             </button>
           <a class="navbar-brand" href="{{ url('/') }}">
-            {{-- <img alt="Brand" src="https://dl.dropboxusercontent.com/s/zkqbixpz601xwx3/abeja.png?dl=0"> --}}
             <img src="http://lacolmenaonline.com/wp-content/uploads/2016/04/La_colmena_logo-2.png">
           </a>
         </div>

@@ -1,5 +1,7 @@
 @extends('layouts.app_backend')
 
+@section('title', 'Categorias')
+
 @section('content')
     @if (count($tags) > 0)
         <table class="table table-striped table-hover table-bordered">
