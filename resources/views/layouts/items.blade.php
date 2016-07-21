@@ -35,7 +35,7 @@
                 var images = $('.images').length;
 
                 if (images > 1){
-                    $(this).parent().remove();
+                    $(this).parent().parent().remove();
                 }
             });
     </script>
