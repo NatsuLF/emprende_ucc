@@ -136,9 +136,9 @@ class ItemController extends Controller
         return redirect()->action('ItemController@index')->with('message', 'Eliminado !');
     }
 
-    public function detail_prod()
+    public function detail_prod(Item $item)
     {
-
+        return view('detail_items', ['item' => $item]);
     }
 
     private function areValidUrl($images)
