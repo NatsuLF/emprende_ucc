@@ -29,15 +29,15 @@
                 <label for="url">Imagen del producto</label>
                 <input type="url" name="url[]" id="url" value="{{ $img->url }}" class="form-control" required>
 
-                <a href="#" class="btn btn-danger btn-xs pull-right delete">
+                <a href="{{ url('images/remove/' .$img->id) }}" class="btn btn-danger btn-xs pull-right">
                     <i class="fa fa-trash-o fa-lg" aria-hidden="true"></i>
                 </a>
             </div>
         @endforeach
     @else
-            <div class="form-group images">
-                <label for="url">Imagen del producto</label>
-                <input type="url" name="url[]" id="url" class="form-control" required>
-            </div>
+        <div class="form-group images">
+            <label for="url">Imagen del producto</label>
+            <input type="url" name="url[]" id="url" class="form-control" required>
+        </div>
     @endif
 </div>

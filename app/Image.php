@@ -10,7 +10,7 @@ class Image extends Model
         'url',
     ];
 
-    public function items()
+    public function item()
     {
         return $this->belongsTo('App\Item');
     }

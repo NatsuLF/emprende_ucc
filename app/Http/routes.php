@@ -82,13 +82,10 @@ Route::get('items/create', ['uses' => 'ItemController@create', 'middleware' => '
 
 Route::post('items', ['uses' => 'ItemController@store', 'middleware' => 'auth']);
 
-Route::get('items/{item}', ['uses' => 'ItemController@edit', 'middleware' => 'auth'
-]);
+Route::get('items/{item}', ['as' => 'item_edit', 'uses' => 'ItemController@edit', 'middleware' => 'auth']);
 
 Route::post('items/{item}', ['uses' => 'ItemController@update', 'middleware' => 'auth']);
 
 Route::delete('items/{item}', ['uses' => 'ItemController@delete', 'middleware' => 'auth']);
 
-// IMAGES - Auth
-// Route::get('/items/{image}', ['uses' => 'ImageController@delete', 'middleware' => 'auth'
-// ]);
+Route::get('/images/remove/{image}', ['as' => 'remove_image', 'uses' => 'ImageController@delete', 'middleware' => 'auth']);
