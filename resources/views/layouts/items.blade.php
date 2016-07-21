@@ -25,8 +25,10 @@
                 e.preventDefault();
 
                 $('.images').first().clone().appendTo('#album');
-            });
-
+            })
+        });
+    </script>
+    <script>
             $(document).on('click', '.delete', function(e) {
                 e.preventDefault();
 
@@ -36,8 +38,6 @@
                     $(this).parent().remove();
                 }
             });
-        });
-
     </script>
 </body>
 </html>

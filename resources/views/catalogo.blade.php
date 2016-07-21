@@ -7,7 +7,7 @@
 
 <div class="row">
     @foreach ($items as $item)
-    <div class="col-md-2">
+    <div class="col-md-3">
     </div>
         <div class="items col-md-4">
             <h4 class="">{{ $item->name }}</h4>

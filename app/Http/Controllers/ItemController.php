@@ -6,7 +6,6 @@ use DB;
 use App\Item;
 use App\Image;
 
-use App\Http\Requests;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Http\Middleware\Session;
@@ -16,6 +15,7 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Contracts\Auth\Authenticatable;
+use App\Http\Requests;
 
 class ItemController extends Controller
 {
@@ -112,6 +112,8 @@ class ItemController extends Controller
                 $imageList[] = new Image(['url' => $image]);
             }
         }
+
+        $item->images()->delete();
 
         $item->images()->saveMany($imageList);
         $item->save();

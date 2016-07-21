@@ -53,7 +53,8 @@ Route::auth();
 // POST - Public
 Route::get('blog', 'HomeController@index');
 
-Route::get('/', 'PostController@blog');
+Route::get
+('/', 'PostController@blog');
 
 Route::get('/blog/{post}', 'PostController@details');
 
@@ -81,10 +82,13 @@ Route::get('items/create', ['uses' => 'ItemController@create', 'middleware' => '
 
 Route::post('items', ['uses' => 'ItemController@store', 'middleware' => 'auth']);
 
-Route::delete('items/{item}', ['uses' => 'ItemController@delete', 'middleware' => 'auth']);
-
-Route::get('items/{item}', ['uses' => 'ItemController@edit', 'middleware' => 'auth']);
+Route::get('items/{item}', ['uses' => 'ItemController@edit', 'middleware' => 'auth'
+]);
 
 Route::post('items/{item}', ['uses' => 'ItemController@update', 'middleware' => 'auth']);
 
-Route::get('hello', 'ItemController@hello');
+Route::delete('items/{item}', ['uses' => 'ItemController@delete', 'middleware' => 'auth']);
+
+// IMAGES - Auth
+// Route::get('/items/{image}', ['uses' => 'ImageController@delete', 'middleware' => 'auth'
+// ]);
