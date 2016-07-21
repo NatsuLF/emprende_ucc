@@ -83,16 +83,12 @@ a > .fa {
     margin-top: 50px;
 }
 
-.items {
-    margin-bottom: 10px;
-    padding: 20px;
-    height: 200px;
-    width: 40%;
-    background-color: #ffffff;
-}
-
 .album-cat {
-    background-color: #ffffff;
+    background-color: #FFF;
     height: 200px;
     width: 180px;
 }
+
+/* OVERWRITING BOOTSTRAP*/
+
+.well { background: #FFF; }

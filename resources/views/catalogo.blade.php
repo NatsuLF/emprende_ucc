@@ -3,26 +3,27 @@
 @section('title', 'Catalogo')
 
 @section('content')
-
-
-<div class="row">
     @foreach ($items as $item)
-    <div class="col-md-3">
-    </div>
-        <div class="items col-md-4">
-            <h4 class="">{{ $item->name }}</h4>
-                    <ul>
-                        <li>{{ $item->description }}</li>
-                    </ul>
-                <p>
-                    <cite>{{ '$ ' . $item->price }}</cite>
-                </p>
-        </div>
-        <div class="row">
-            <div class="album-cat col-md-2">
-                <img class="album-cat" src="{{ $item->images[0]->url }}" alt="{{ $item->images }}">
+        <div class="well">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="">{{ $item->name }}</h4>
+
+                    <small>Descripcion</small>
+                    <p>{{ $item->description }}</p>
+
+                    <small>Precio</small>
+                    <p>{{ '$ ' . $item->price }}</p>
+
+                    <a href="#">Detalle</a>
+                </div>
+
+                <div class="col-md-6">
+                    <div style="overflow: hidden; height: 50%; ">
+                        <img src="{{ $item->images[0]->url }}" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     @endforeach
-</div>
 @endsection
