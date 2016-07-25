@@ -1,6 +1,5 @@
 <?php
 
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
 
@@ -10,10 +9,6 @@ Route::get('/', function() {
 
 Route::get('/nosotros', function() {
     return view('home_app');
-});
-
-Route::get('/catalogo', function() {
-    return view('catalogo');
 });
 
 Route::get('/servicios', function() {
@@ -52,9 +47,9 @@ Route::auth();
 
 
 // POST - Public
-Route::get('blog', 'HomeController@index');
-
 Route::get('/', 'PostController@blog');
+
+Route::get('blog', 'HomeController@index');
 
 Route::get('/blog/{slug}', 'PostController@details');
 

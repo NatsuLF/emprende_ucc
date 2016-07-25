@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', $item->name)
+@section('title', 'Catalogo')
 
 @section('javascripts')
     <script>
@@ -25,6 +25,13 @@
 
                     <small>Precio</small>
                     <p>{{ '$ ' . $item->price }}</p>
+
+                    <div>
+                        <button type="button" class="btn btn-success"><i class="fa fa-paypal fa-lg" aria-hidden="true"></i>
+                         !Comprar ahora¡</button>
+                        <button type="button" class="btn btn-info"><i class="fa fa-cart-plus fa-lg" aria-hidden="true"></i>
+                         Añadir al carro de compras</button>
+                    </div>
                 </div>
 
                 <div class="col-md-6">

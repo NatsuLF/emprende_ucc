@@ -3,7 +3,7 @@
 @section('title', 'Blog')
 
 @section('content')
-    <div class="jumbotron">
+    <div class="well jumbotron">
         <div class="container-fluid">
             <h1>Hola, Bienvenido !!!</h1>
             <p>En esta area podras informarte acerca de las diversas actividades que realizamos,

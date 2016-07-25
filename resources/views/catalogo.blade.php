@@ -15,7 +15,7 @@
                     <small>Precio</small>
                     <p>{{ '$ ' . $item->price }}</p>
 
-                    <a href="{{ url('/catalogo/' .$item->slug) }}">Detalle</a>
+                    <a class="btn btn-info" href="{{ url('/catalogo/' .$item->slug) }}">Detalle</a>
                 </div>
 
                 <div class="col-md-6">

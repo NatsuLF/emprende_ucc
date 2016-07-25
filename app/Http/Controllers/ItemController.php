@@ -143,7 +143,7 @@ class ItemController extends Controller
     {
         $item = Item::where('slug', '=', $slug)->first();
 
-        return view('detail_items', ['item' => $item]);
+        return view('item.detail_items', ['item' => $item]);
     }
 
     private function areValidUrl($images)

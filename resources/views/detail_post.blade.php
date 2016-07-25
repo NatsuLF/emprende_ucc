@@ -21,8 +21,8 @@
 
 
     <div class="shared-social col-md-1">
-        <div id="shareBtn" class="btn btn-success">
-            Share
+        <div id="shareBtn" class="btn">
+            <img src="https://dl.dropboxusercontent.com/s/t14flahpj3e0wd4/facebook500.png?dl=0" width="32px" height="32px" alt="Share on facebook">
         </div>
         <span class="fa-stack fa-lg">
             <a

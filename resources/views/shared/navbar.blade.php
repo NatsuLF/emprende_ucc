@@ -18,8 +18,7 @@
                 <li class=""><a href="/catalogo"><i class="fa fa-book fa-lg" aria-hidden="true"></i> Catalogo</a></li>
                 <li class=""><a href="/servicios"><i class="fa fa-suitcase fa-lg" aria-hidden="true"></i> Servicios</a></li>
                 <li class=""><a href="/contacto"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> Contactanos</a></li>
-{{--                 <li class=""><a href="/login"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Login</a></li>
- --}}            </ul>
+            </ul>
         </div>
     </div>
 </nav>
