@@ -1,5 +1,6 @@
 <?php
 
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
 
@@ -55,7 +56,7 @@ Route::get('blog', 'HomeController@index');
 
 Route::get('/', 'PostController@blog');
 
-Route::get('/blog/{post}', 'PostController@details');
+Route::get('/blog/{slug}', 'PostController@details');
 
 // POST - Auth
 Route::get('posts', ['uses' => 'PostController@index', 'middleware' => 'auth']);
@@ -74,7 +75,7 @@ Route::delete('posts/{post}', ['uses' => 'PostController@delete', 'middleware' =
 // ITEMS - Public
 Route::get('catalogo', 'ItemController@catalogo');
 
-Route::get('/item/detail/{item}', 'ItemController@detail_prod');
+Route::get('/catalogo/{slug}', 'ItemController@detail_prod');
 
 // ITEMS - Auth
 Route::get('items', ['uses' => 'ItemController@index', 'middleware' => 'auth']);

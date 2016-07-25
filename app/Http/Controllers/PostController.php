@@ -61,6 +61,7 @@ class PostController extends Controller
         $post->title = $request->title;
         $post->body = $request->body;
         $post->published = $published;
+        $post->slug = str_slug($post->title, '_');
 
         $post->save();
         $post->tags()->sync($request->tags);
@@ -99,7 +100,7 @@ class PostController extends Controller
         $validator = Validator::make($request->all(), $rules);
 
         if ($validator->fails()) {
-            return redirect('posts/' . $post->id)
+            return redirect('posts/' . $post->slug)
                 ->withInput()
                 ->withErrors($validator);
         }
@@ -115,6 +116,7 @@ class PostController extends Controller
         $post->title = $request->title;
         $post->published = $published;
         $post->body = $request->body;
+        $post->slug = str_slug($post->title, '_');
 
         $post->tags()->detach();
         $post->tags()->sync($request->tags);
@@ -130,9 +132,9 @@ class PostController extends Controller
         return redirect()->action('PostController@index')->with('message', 'Eliminado !');
     }
 
-    public function details(Post $post)
+    public function details(String $slug)
     {
-        $posts = Post::where('id', '=', $post->id)->get();
+        $posts = Post::where('slug', '=', $slug)->get();
 
         return view('detail_post', ['posts' => $posts]);
     }

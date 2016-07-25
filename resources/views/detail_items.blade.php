@@ -1,12 +1,12 @@
 @extends('layouts.master')
 
-@section('title', 'Item')
+@section('title', $item->name)
 
 @section('javascripts')
     <script>
         $(function() {
             $('.carousel').carousel({
-                interval: 500,
+                interval: 5000,
                 pause: 'hover'
             })
         });
@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div id="carousel-id" class="carousel slide" data-ride="carousel">
+                    <div id="carousel-id" class="carousel slide" data-ride="carousel" style="height: 400px; margin: 0 auto">
                         <ol class="carousel-indicators">
                             @foreach ($item->images as $index => $image)
                                 <li data-target="#carousel-id" data-slide-to="{{ $index }}" class="{{ $index === 0 ? 'active' : '' }}"></li>
@@ -38,7 +38,7 @@
                         <div class="carousel-inner" role="listbox">
                             @foreach ($item->images as $index => $image)
                                 <div class="item {{ $index === 0 ? 'active' : '' }}">
-                                    <img src="{{ $image->url }}" alt="">
+                                    <img style="height: 400px; margin: 0 auto;" src="{{ $image->url }}" alt="">
                                     <div class="carousel-caption">lorem</div>
                                 </div>
                             @endforeach

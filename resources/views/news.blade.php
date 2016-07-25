@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="form-gruop btn-read_more">
-                    <a href="{{ '/blog/' . $post->id }}" class="btn btn-primary">
+                    <a href="{{ '/blog/' . $post->slug }}" class="btn btn-primary">
                     Seguir leyendo <i class="fa fa-caret-square-o-right" aria-hidden="true"></i>
                     </a>
                 </div>

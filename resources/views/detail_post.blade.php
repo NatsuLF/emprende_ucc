@@ -1,6 +1,7 @@
 @extends('layouts.master')
 
-@section('title', 'Blog')
+@section('title', 'Posts')
+
 
 @section('content')
     <div class="col-md-11">
@@ -18,12 +19,18 @@
         @endforeach
     </div>
 
+
     <div class="shared-social col-md-1">
+        <div id="shareBtn" class="btn btn-success">
+            Share
+        </div>
         <span class="fa-stack fa-lg">
-            <i class="fa fa-facebook-square fa-stack-2x"></i>
-        </span>
-        <span class="fa-stack fa-lg">
-            <i class="fa fa-google-plus-official fa-stack-2x"></i>
+            <a
+            href="https://plus.google.com/share?url={{ $_SERVER['REQUEST_URI'] }}"
+            class="btn"
+            onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
+            return false;">
+            <img src="https://www.gstatic.com/images/icons/gplus-32.png" alt="Share on Google+"/></a>
         </span>
     </div>
 @endsection

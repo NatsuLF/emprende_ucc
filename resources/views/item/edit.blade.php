@@ -5,7 +5,7 @@
 @section('content')
     <form action="{{ '/items/' . $item->id }}" id="form" method="post" autocomplete="off">
         {{ csrf_field() }}
-        <input type="hidden" name="id">
+        <input type="hidden" name="slug">
         @include('item.form')
 
         <button type="submit" class="btn btn-primary">Actualizar</button>

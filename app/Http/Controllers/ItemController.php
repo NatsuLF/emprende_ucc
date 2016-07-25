@@ -6,6 +6,7 @@ use DB;
 use App\Item;
 use App\Image;
 
+use App\Http\Requests;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Http\Middleware\Session;
@@ -15,7 +16,6 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Contracts\Auth\Authenticatable;
-use App\Http\Requests;
 
 class ItemController extends Controller
 {
@@ -57,6 +57,7 @@ class ItemController extends Controller
         $item->price = $request->price;
         $item->user_id = $current_user->id;
         $item->description = $request->description;
+        $item->slug = str_slug($item->name, '_');
         $images = $request->url;
         $imageList = [];
 
@@ -76,7 +77,7 @@ class ItemController extends Controller
 
     public function edit(Item $item)
     {
-        return view('item.edit', ['item' => $item,]);
+        return view('item.edit', ['item' => $item]);
     }
 
     public function update(Request $request, Item $item)
@@ -102,6 +103,7 @@ class ItemController extends Controller
         $item->name = $request->name;
         $item->description = $request->description;
         $item->price = $request->price;
+        $item->slug = str_slug($item->name, '_');
         $images = $request->url;
         $imageList = [];
 
@@ -121,12 +123,6 @@ class ItemController extends Controller
         return redirect()->action('ItemController@index')->with('message', 'Actualizado !');
     }
 
-    public function catalogo()
-    {
-        $items = Item::orderBy('created_at', 'desc')->get();
-
-        return view('catalogo', ['items' => $items]);
-    }
 
     public function delete(Item $item)
     {
@@ -136,8 +132,17 @@ class ItemController extends Controller
         return redirect()->action('ItemController@index')->with('message', 'Eliminado !');
     }
 
-    public function detail_prod(Item $item)
+    public function catalogo()
     {
+        $items = Item::orderBy('created_at', 'desc')->get();
+
+        return view('/catalogo', ['items' => $items]);
+    }
+
+    public function detail_prod(String $slug)
+    {
+        $item = Item::where('slug', '=', $slug)->first();
+
         return view('detail_items', ['item' => $item]);
     }
 

@@ -15,11 +15,11 @@
                     <small>Precio</small>
                     <p>{{ '$ ' . $item->price }}</p>
 
-                    <a href="{{ url('item/detail/' .$item->id) }}">Detalle</a>
+                    <a href="{{ url('/catalogo/' .$item->slug) }}">Detalle</a>
                 </div>
 
                 <div class="col-md-6">
-                    <div style="overflow: hidden; height: 50%; ">
+                    <div style="overflow: hidden; height: auto; max-height: 500px; ">
                         <img src="{{ $item->images[0]->url }}" alt="">
                     </div>
                 </div>
