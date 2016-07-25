@@ -7,7 +7,8 @@
         <div class="container-fluid">
             <h1>Hola, Bienvenido !!!</h1>
             <p>En esta area podras informarte acerca de las diversas actividades que realizamos,
-            ademas de publicar contenidos que te ayudaran a entender de que se trata la apicultura. Esperemos que disfrutes de nuestro pequeño Blog !!!</p>
+            ademas de publicar contenidos que te ayudaran a entender de que se trata la apicultura.
+            Esperemos que disfrutes de nuestro pequeño Blog !!!</p>
         </div>
     </div>
 

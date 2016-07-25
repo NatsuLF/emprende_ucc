@@ -24,11 +24,11 @@
         <script src="{{ asset('js/textarea.js') }}"></script>
         <script>
             document.getElementById('shareBtn').onclick = function() {
-              FB.ui({
-                method: 'share',
-                mobile_iframe: true,
-                href: 'https://developers.facebook.com/docs/',
-              }, function(response){});
+                  FB.ui({
+                        method: 'share',
+                        mobile_iframe: true,
+                        href: 'https://developers.facebook.com/docs/',
+                  }, function(response){});
             }
         </script>
 

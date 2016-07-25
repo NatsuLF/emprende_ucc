@@ -3,18 +3,6 @@
 use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
 
-Route::get('/', function() {
-    return view('news');
-});
-
-Route::get('/nosotros', function() {
-    return view('home_app');
-});
-
-Route::get('/servicios', function() {
-    return view('servicios');
-});
-
 Route::get('/contacto', function() {
     return view('contacto');
 });
@@ -22,6 +10,12 @@ Route::get('/contacto', function() {
 Route::get('/login', function() {
     return view('/auth/login');
 });
+
+// STATIC
+
+Route::get('/about', 'StaticController@about');
+
+Route::get('/services', 'StaticController@services');
 
 // MAIL
 Route::get('/contacto', 'ContactController@contact');

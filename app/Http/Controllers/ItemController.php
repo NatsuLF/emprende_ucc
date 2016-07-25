@@ -143,6 +143,7 @@ class ItemController extends Controller
     {
         $item = Item::where('slug', '=', $slug)->first();
 
+        // dd($_SERVER['REQUEST_URI']);
         return view('item.detail_items', ['item' => $item]);
     }
 

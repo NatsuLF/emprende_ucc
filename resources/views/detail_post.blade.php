@@ -26,7 +26,7 @@
         </div>
         <span class="fa-stack fa-lg">
             <a
-            href="https://plus.google.com/share?url={{ $_SERVER['REQUEST_URI'] }}"
+            href="https://plus.google.com/share?url={{ 'http://localhost' . $_SERVER['REQUEST_URI'] }}"
             class="btn"
             onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
             return false;">
