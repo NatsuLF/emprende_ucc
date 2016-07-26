@@ -5,26 +5,26 @@
 @section('content')
     <div class="col-md-6">
         <div class="panel panel-primary">
-            <div class="panel-heading">Contactanos</div>
+            <div class="panel-heading">{{ trans('messages.title_panel') }}</div>
             <div class="panel-body">
                 <form action="sendMail" method="post" role="form">
                     {{ csrf_field() }}
                     <div class="form-group">
-                        <label for="name">Nombre</label>
+                        <label for="name">{{ trans('messages.name') }}</label>
                         <input type="text" class="form-control" name="name" id="name" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="mail">Correo</label>
+                        <label for="mail">{{ trans('messages.mail') }}</label>
                         <input type="email" class="form-control" name="mail" id="mail" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="body">Mensaje</label>
+                        <label for="body">{{ trans('messages.message') }}</label>
                         <textarea class="form-control" rows="1" name="body" id="body"></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="btn btn-primary">{{ trans('messages.btn_contact_us') }}</button>
                 </form>
             </div>
         </div>

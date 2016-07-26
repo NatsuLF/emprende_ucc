@@ -5,12 +5,10 @@
 @section('content')
     <div class="col-md-12">
         <div class="well jumbotron">
-            <h1>Hola, Bienvenido !!!</h1>
+            <h1>{{ trans('messages.banner') }}</h1>
 
             <p>
-                En esta area podras informarte acerca de las diversas actividades que realizamos,
-                ademas de publicar contenidos que te ayudaran a entender de que se trata la apicultura.
-                Esperemos que disfrutes de nuestro pequeño Blog !!!
+                {{ trans('messages.banner_content') }}
             </p>
         </div>
 
@@ -39,7 +37,7 @@
 
                 <div class="clearfix">
                     <a href="{{ '/blog/' . $post->slug }}" class="btn btn-primary pull-right">
-                        Seguir leyendo <i class="fa fa-caret-square-o-right" aria-hidden="true"></i>
+                        {{ trans('messages.btn_blog') }} <i class="fa fa-caret-square-o-right" aria-hidden="true"></i>
                     </a>
                 </div>
             @endforeach

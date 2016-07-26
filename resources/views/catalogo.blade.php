@@ -15,7 +15,9 @@
                     <small>Precio</small>
                     <p>{{ '$ ' . $item->price }}</p>
 
-                    <a class="btn btn-info" href="{{ url($_SERVER['REQUEST_URI'] . '/' . $item->slug) }}">Detalle</a>
+                    <a class="btn btn-info" href="{{ url($_SERVER['REQUEST_URI'] . '/' . $item->slug) }}">
+                        {{ trans('messages.btn_catalog') }}
+                    </a>
                 </div>
 
                 <div class="col-md-6">

@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
 
+Route::get('lang/{lang}', ['as'=>'lang.switch', 'uses'=>'LanguageController@switchLang']);
+
 Route::get('/contacto', function() {
     return view('contacto');
 });

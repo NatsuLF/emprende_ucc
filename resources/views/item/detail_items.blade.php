@@ -28,9 +28,9 @@
 
                     <div>
                         <button type="button" class="btn btn-success"><i class="fa fa-paypal fa-lg" aria-hidden="true"></i>
-                         !Comprar ahora¡</button>
+                         {{ trans('messages.btn_buy_now') }}</button>
                         <button type="button" class="btn btn-info"><i class="fa fa-cart-plus fa-lg" aria-hidden="true"></i>
-                         Añadir al carro de compras</button>
+                         {{ trans('messages.btn_add_to_car') }}</button>
                     </div>
                 </div>
 

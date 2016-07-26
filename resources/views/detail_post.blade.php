@@ -4,7 +4,7 @@
 
 
 @section('content')
-    <div class="col-md-11">
+    <div class="col-md-10">
         @foreach ($posts as $post)
             <div class="jumbotron">
                 <h1>{{ $post->title }}</h1>
@@ -20,17 +20,18 @@
     </div>
 
 
-    <div class="shared-social col-md-1">
+    <div class="shared-social col-md-2">
         <div id="shareBtn" class="btn">
             <img src="https://dl.dropboxusercontent.com/s/t14flahpj3e0wd4/facebook500.png?dl=0" width="32px" height="32px" alt="Share on facebook">
         </div>
-        <span class="fa-stack fa-lg">
+        <div class="">
             <a
-            href="https://plus.google.com/share?url={{ 'http://localhost' . $_SERVER['REQUEST_URI'] }}"
-            class="btn"
-            onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
-            return false;">
-            <img src="https://www.gstatic.com/images/icons/gplus-32.png" alt="Share on Google+"/></a>
-        </span>
+                href="https://plus.google.com/share?url={{ 'http://localhost' . $_SERVER['REQUEST_URI'] }}"
+                class="btn"
+                onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
+                return false;">
+                <img src="https://www.gstatic.com/images/icons/gplus-32.png" alt="Share on Google+"/>
+            </a>
+         </div>
     </div>
 @endsection

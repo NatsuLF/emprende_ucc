@@ -4,10 +4,10 @@
 
 @section('content')
 
-	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+	<div class="col-md-6 col-md-offset-3">
 		<div class="panel panel-primary">
 			<div class="panel-heading">
-				<h3 class="panel-title">Panel title</h3>
+				<h3 class="panel-title">Servicio 1</h3>
 			</div>
 			<div class="panel-body">
 				<p>
@@ -23,7 +23,7 @@
 
 		<div class="panel panel-primary">
 			<div class="panel-heading">
-				<h3 class="panel-title">Panel title</h3>
+				<h3 class="panel-title">Servicio 2</h3>
 			</div>
 			<div class="panel-body">
 				<p>

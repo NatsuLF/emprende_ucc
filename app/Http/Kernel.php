@@ -14,7 +14,6 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $middleware = [
-        // 'App\Http\Middleware\Language',
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
     ];
 
@@ -28,6 +27,7 @@ class Kernel extends HttpKernel
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
+            \App\Http\Middleware\Language::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
         ],

@@ -6,26 +6,24 @@
     @include('shared.slide')
     @include('shared.myv')
 
-    <footer>
+    <div class="well col-md-6 col-md-offset-3">
+        <p>
+            {{ trans('messages.direction') }}
+            <br>
+            <i class="fa fa-map" aria-hidden="true"></i>
+            Costado Oeste Campus Medico - UNAN-Leon
+            <br><br>
+            {{ trans('messages.phones') }}
+            <br>
+            <i class="fa fa-phone" aria-hidden="true"></i> 2311-3456
+            <br>
+            <i class="fa fa-phone" aria-hidden="true"></i> 2311-6754
+            <br><br>
+            <i class="fa fa-envelope" aria-hidden="true"></i> Email:
+            <a href="mailto:leodota7@gmail.com">merchandise@apicola.com</a>
+        </p>
         <center>
-            <div class="well col-md-8 col-md-offset-2">
-                <p>
-                    Direccion
-                    <br>
-                    <i class="fa fa-map" aria-hidden="true"></i>
-                    Costado Oeste Campus Medico - UNAN-Leon
-                    <br><br>
-                    Telefonos
-                    <br>
-                    <i class="fa fa-phone" aria-hidden="true"></i> 2311-3456
-                    <br>
-                    <i class="fa fa-phone" aria-hidden="true"></i> 2311-6754
-                    <br><br>
-                    <i class="fa fa-envelope" aria-hidden="true"></i> Email:
-                    <a href="mailto:leodota7@gmail.com">merchandise@apicola.com</a>
-                </p>
-                <h5>Proyecto de Tranferencia Tecnologica Apicola - UCC León</h5>
-            </div>
+            <h4>Proyecto de Tranferencia Tecnologica Apicola - UCC León</h4>
         </center>
-    </footer>
+    </div>
 @endsection
