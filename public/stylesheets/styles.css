@@ -1,6 +1,7 @@
 body {
     background-image: url('https://dl.dropboxusercontent.com/s/43h0jmhzv2mrrm1/wp.png?dl=0');
     padding-top: 75px;
+    padding-bottom: 15px;
 }
 
 label {
@@ -19,18 +20,18 @@ div.container-fluid {
 
 .panel-primary > .panel-heading {
     background-color: #FFD600;
-    border-color: #000000;
+    border-color: #FFF;
     color: #000000;
 }
 
 .btn-primary {
     background-color: #FFD600;
-    border-color: #000000;
+    border-color: #FFF;
     color: #000000;
 }
 
 .btn-primary:hover {
-    color: #fff;
+    color: #FFF;
     background-color: #FFD600;
     border-color: #000000;
 }
@@ -38,7 +39,7 @@ div.container-fluid {
 .btn-primary:focus {
     color: #fff;
     background-color: #FFD600;
-    border-color: #fff;
+    border-color: #FFF;
 }
 
 .btn-read_more {
@@ -49,7 +50,7 @@ div.container-fluid {
 
 
 .panel-primary {
-    border-color: #000000;
+    border-color: #FFF;
 }
 
 a > .fa {
