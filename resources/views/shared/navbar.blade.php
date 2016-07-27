@@ -25,7 +25,7 @@
                 </li>
                 <li class="{{ $controller == 'StaticController' && $action == 'services' ? 'active' : '' }}">
                     <a href="{{ url('services') }}">
-                        <i class="fa fa-suitcase fa-lg" aria-hidden="true"></i> {{ trans('messages.services') }}
+                        <i class="fa fa-rocket fa-lg" aria-hidden="true"></i> {{ trans('messages.services') }}
                     </a>
                 </li>
                 <li class="{{ $controller == 'ContactController' ? 'active' : 'no-active' }}">

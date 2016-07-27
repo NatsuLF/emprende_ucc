@@ -4,7 +4,7 @@ return [
         // NAVBAR
     'about' => 'Nosotros',
     'catalog' => 'Catalogo',
-    'services' => 'Servicios',
+    'services' => 'Proyectos',
     'contact' => 'Contactanos',
 
         // BUTTOMS
