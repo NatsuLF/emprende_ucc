@@ -4,7 +4,7 @@
 
 @section('content')
     @foreach ($items as $item)
-        <div class="well">
+        <div class="well" id="{{ $item->slug }}">
             <div class="row">
                 <div class="col-md-6">
                     <h4 class="">{{ $item->name }}</h4>
@@ -15,7 +15,7 @@
                     <small>Precio</small>
                     <p>{{ '$ ' . $item->price }}</p>
 
-                    <a class="btn btn-info" href="{{ url($_SERVER['REQUEST_URI'] . '/' . $item->slug) }}">
+                    <a class="btn btn-info" href="{{ url('catalogo' . '/' . $item->slug) }}">
                         {{ trans('messages.btn_catalog') }}
                     </a>
                 </div>

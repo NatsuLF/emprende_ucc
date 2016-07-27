@@ -7,6 +7,10 @@
     <div class="col-md-10">
         @foreach ($posts as $post)
             <div class="jumbotron">
+            <a class="btn btn-success"
+            href="{{ url()->previous() . '#' . $post->slug }}">
+                {{ trans('messages.btn_go_back_post') }}
+            </a>
                 <h1>{{ $post->title }}</h1>
                     <cite>{{ $post->user->name }}</cite>
                     <small> {{ $post->created_at->format('M j, Y') }}</small>

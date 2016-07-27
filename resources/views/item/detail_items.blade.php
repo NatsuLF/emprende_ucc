@@ -18,6 +18,10 @@
         <div class="well">
             <div class="row">
                 <div class="col-md-6">
+                    <a class="btn btn-success"
+                    href="{{ url()->previous() . '#' . $item->slug }}">
+                        {{ trans('messages.btn_go_back_item') }}
+                    </a>
                     <h4 class="">{{ $item->name }}</h4>
 
                     <small>Descripcion</small>

@@ -15,7 +15,7 @@
         @if (count($posts) > 0)
             @foreach ($posts as $post)
                 <br>
-                <div class="panel panel-primary">
+                <div class="panel panel-primary" id="{{ $post->slug }}">
                     <div class="panel-heading">
                         <div class="panel-title">
                             <i class="fa fa-caret-right" aria-hidden="true"></i>

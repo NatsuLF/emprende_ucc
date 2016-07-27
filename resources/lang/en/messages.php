@@ -13,6 +13,8 @@ return [
     'btn_contact_us' => 'Send',
     'btn_buy_now' => '!Buy Now¡',
     'btn_add_to_car' => 'Add to Cart',
+    'btn_go_back_post' => 'Go back',
+    'btn_go_back_item' => 'Go back',
 
         // BLOG
     'banner' => 'Hello , Welcome',
