@@ -81,3 +81,12 @@ a > .fa {
 .well { background: #FFF; }
 
 .language { padding-top: 5px;  }
+
+/* OVERWRITING BOOTSTRAP */
+
+.carousel {
+    height: 600px;
+    width: auto;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
