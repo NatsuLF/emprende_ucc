@@ -13,13 +13,8 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="{{ $controller == 'PostController' ? 'active' : 'no-active' }}">
-                    <a href="{{ url('/') }}">
-                        <i class="fa fa-newspaper-o fa-lg" aria-hidden="true"></i> Blog
-                    </a>
-                </li>
                 <li class="{{ $controller == 'StaticController' && $action == 'about' ? 'active' : '' }}">
-                    <a href="{{ url('about') }}">
+                    <a href="{{ url('/') }}">
                         <i class="fa fa-home fa-lg" aria-hidden="true"></i> {{ trans('messages.about') }}
                     </a>
                 </li>
@@ -36,6 +31,11 @@
                 <li class="{{ $controller == 'ContactController' ? 'active' : 'no-active' }}">
                     <a href="/contacto">
                         <i class="fa fa-envelope fa-lg" aria-hidden="true"></i> {{ trans('messages.contact') }}
+                    </a>
+                </li>
+                <li class="{{ $controller == 'PostController' ? 'active' : 'no-active' }}">
+                    <a href="{{ url('blog') }}">
+                        <i class="fa fa-newspaper-o fa-lg" aria-hidden="true"></i> Blog
                     </a>
                 </li>
                 <li class="dropdown language">

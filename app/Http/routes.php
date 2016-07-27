@@ -15,7 +15,7 @@ Route::get('/login', function() {
 
 // STATIC
 
-Route::get('/about', 'StaticController@about');
+Route::get('/', 'StaticController@about');
 
 Route::get('/services', 'StaticController@services');
 
@@ -43,9 +43,9 @@ Route::auth();
 
 
 // POST - Public
-Route::get('/', 'PostController@blog');
+Route::get('blog', 'PostController@blog');
 
-Route::get('blog', 'HomeController@index');
+Route::get('about', 'HomeController@index');
 
 Route::get('/blog/{slug}', 'PostController@details');
 
