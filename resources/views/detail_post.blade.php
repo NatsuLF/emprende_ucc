@@ -36,8 +36,16 @@
         @endforeach
     </div>
 
-    <div class="fb-share-button"
-        data-href="{{ Request::url() }}"
-        data-layout="button_count">
+    <div class="shared-social">
+        <div class="fb-share-button"
+            data-href="{{ Request::url() }}"
+            data-layout="button_count">
+        </div>
+        <br><br>
+            <a href="https://plus.google.com/share?url={'{{ Request::url() }}'}" onclick="javascript:window.open(this.href,
+               '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
+               return false;">
+               <img src="https://www.gstatic.com/images/icons/gplus-32.png" alt="Share on Google+"/>
+            </a>
     </div>
 @endsection
