@@ -81,3 +81,10 @@ a > .fa {
 .well { background: #FFF; }
 
 .language { padding-top: 5px;  }
+
+#carousel-id
+{
+    width: auto;
+    max-height: 600px;
+    overflow: hidden;
+}
