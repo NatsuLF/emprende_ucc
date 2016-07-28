@@ -82,6 +82,7 @@ a > .fa {
 
 .language { padding-top: 5px;  }
 
+<<<<<<< HEAD
 /* OVERWRITING BOOTSTRAP */
 
 .carousel {
@@ -89,4 +90,11 @@ a > .fa {
     width: auto;
     overflow: hidden;
     margin-bottom: 15px;
+=======
+#carousel-id
+{
+    width: auto;
+    max-height: 600px;
+    overflow: hidden;
+>>>>>>> backend
 }
