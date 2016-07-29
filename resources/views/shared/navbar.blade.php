@@ -47,21 +47,21 @@
                   @endif
                     <span class="caret"></span>
                   </a>
-                      <ul class="dropdown-menu">
-                        @foreach (Config::get('languages') as $lang => $language)
-                            @if ($lang != App::getLocale())
-                                <li>
-                                    <a href="{{ route('lang.switch', $lang) }}">
-                                         @if ($language == 'English')
-                                             <img src="https://dl.dropboxusercontent.com/s/mwmlvrbsny65faw/united-states.gif?dl=0" alt="English">
-                                         @else
-                                             <img src="https://dl.dropboxusercontent.com/s/r0sjvws8y3lzk9u/spain.gif?dl=0" alt="Spanish">
-                                         @endif
-                                    </a>
-                                </li>
-                            @endif
-                        @endforeach
-                      </ul>
+                    <ul class="dropdown-menu">
+                      @foreach (Config::get('languages') as $lang => $language)
+                          @if ($lang != App::getLocale())
+                              <li>
+                                  <a href="{{ route('lang.switch', $lang) }}">
+                                       @if ($language == 'English')
+                                           <img src="https://dl.dropboxusercontent.com/s/mwmlvrbsny65faw/united-states.gif?dl=0" alt="English">
+                                       @else
+                                           <img src="https://dl.dropboxusercontent.com/s/r0sjvws8y3lzk9u/spain.gif?dl=0" alt="Spanish">
+                                       @endif
+                                  </a>
+                              </li>
+                          @endif
+                      @endforeach
+                    </ul>
                 </li>
             </ul>
         </div>

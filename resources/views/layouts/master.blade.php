@@ -8,28 +8,58 @@
         <meta itemprop="description" content="Blog informativo del Proyecto apicola - UCC">
         <meta itemprop="image" content="https://dl.dropboxusercontent.com/s/qodhyrzlqiimghi/Logo.png?dl=0">
 
-        <title>Proyecto Apicola - @yield('title')</title>
-        <link rel="stylesheet" href="{{ asset('components/bootstrap/dist/css/bootstrap.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('components/font-awesome/css/font-awesome.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('stylesheets/navbar.css') }}">
-        <link rel="stylesheet" href="{{ asset('stylesheets/styles.css') }}">
-
         <meta property="og:url"           content="http://www.localhost:8000/blog/" />
         <meta property="og:type"          content="website" />
         <meta property="og:title"         content="Proyecto Apicola - UCC" />
         <meta property="og:description"   content="Diseño de colmenas modelo Vincent" />
         <meta property="og:image"         content="https://dl.dropboxusercontent.com/s/qodhyrzlqiimghi/Logo.png?dl=0" />
 
+        <title>Proyecto Apicola - @yield('title')</title>
+        <link rel="stylesheet" href="{{ asset('components/bootstrap/dist/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('components/font-awesome/css/font-awesome.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('stylesheets/navbar.css') }}">
+        <link rel="stylesheet" href="{{ asset('stylesheets/styles.css') }}">
     </head>
     <body>
 
     @include('shared.navbar')
-
         <div class="container">
             <div class="row">
                 @yield('content')
             </div>
         </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>{{ trans('messages.direction') }}</p>
+                        <p>
+                            <i class="fa fa-map" aria-hidden="true"></i>
+                            {{ Config::get('Contact.address') }}
+                        </p>
+
+                        <p>{{ trans('messages.phones') }}</p>
+                        @foreach (Config::get('Contact.telephones') as $telephone)
+                            <i class="fa fa-phone" aria-hidden="true"></i> {{ $telephone }}
+                            <br>
+                        @endforeach
+
+                        <p>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            {{ Config::get('Contact.email') }}
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <img
+                            class="pull-right"
+                            src="https://dl.dropboxusercontent.com/s/gwmqrocq9hffaks/lg.png?dl=0"
+                            alt="Proyecto Apicola - UCC León">
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <script src="{{ asset('components/jquery/dist/jquery.min.js') }}"></script>
         <script src="{{ asset('components/bootstrap/dist/js/bootstrap.min.js') }}"></script>

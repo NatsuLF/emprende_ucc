@@ -1,7 +1,8 @@
 body {
     background-image: url('https://dl.dropboxusercontent.com/s/43h0jmhzv2mrrm1/wp.png?dl=0');
     padding-top: 75px;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 label {
@@ -12,6 +13,7 @@ label {
 textarea#body {
     resize: vertical;
     min-height: 200px;
+    max-height: auto;
 }
 
 div.container-fluid {
@@ -76,25 +78,23 @@ a > .fa {
     width: 180px;
 }
 
+footer {
+    color: #444;
+    background-color: #FFF;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
 /* OVERWRITING BOOTSTRAP*/
 
 .well { background: #FFF; }
 
 .language { padding-top: 5px;  }
 
-<<<<<<< HEAD
-/* OVERWRITING BOOTSTRAP */
-
 .carousel {
     height: 600px;
     width: auto;
     overflow: hidden;
     margin-bottom: 15px;
-=======
-#carousel-id
-{
-    width: auto;
-    max-height: 600px;
-    overflow: hidden;
->>>>>>> backend
 }
