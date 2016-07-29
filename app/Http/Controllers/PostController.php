@@ -39,7 +39,8 @@ class PostController extends Controller
         $constraints = [
             'title' => 'required',
             'body' => 'required',
-            'tags' => 'required'
+            'summary' => 'required|max:255',
+            'tags' => 'required',
         ];
 
         $validator = Validator::make($request->all(), $constraints);
@@ -60,6 +61,7 @@ class PostController extends Controller
         $post->user_id = $current_user->id;
         $post->title = $request->title;
         $post->body = $request->body;
+        $post->summary = $request->summary;
         $post->published = $published;
         $post->slug = str_slug($post->title, '_');
 
@@ -94,7 +96,8 @@ class PostController extends Controller
         $rules = [
             'title' => 'required',
             'body' => 'required',
-            'tags' => 'required'
+            'summary' => 'required|max:255',
+            'tags' => 'required',
         ];
 
         $validator = Validator::make($request->all(), $rules);
@@ -116,6 +119,7 @@ class PostController extends Controller
         $post->title = $request->title;
         $post->published = $published;
         $post->body = $request->body;
+        $post->summary = $request->summary;
         $post->slug = str_slug($post->title, '_');
 
         $post->tags()->detach();

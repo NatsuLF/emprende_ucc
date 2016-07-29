@@ -26,7 +26,7 @@
                         </div>
                     </div>
                     <div class="panel-body">
-                        <p>{!! $post->body !!}</p>
+                        <p>{!! $post->summary !!}</p>
                     </div>
                 </div>
 

@@ -2,6 +2,13 @@ body {
     padding-top: 70px;
 }
 
+textarea#summary {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 150px;
+}
+
 .btn-back {
     margin-bottom: 15px;
 }
+
