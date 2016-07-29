@@ -18,7 +18,7 @@ return [
     'btn_continue_mail' => 'Continue',
 
         // BLOG
-    'banner' => 'Hello , Welcome',
+    'banner' => 'Hello, Welcome',
     'banner_content' => 'In this area you can inform about the various activities we do , besides publishing content that will help you to understand that beekeeping is . Hopefully you enjoy our little Blog.',
 
         // MISIÓN VISIÓN
