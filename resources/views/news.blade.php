@@ -41,3 +41,7 @@
         @endif
     </div>
 @endsection
+
+@section('footer')
+    @include('shared.footer')
+@endsection

@@ -79,6 +79,7 @@ a > .fa {
 }
 
 footer {
+    bottom: 0;
     color: #444;
     background-color: #FFF;
     margin-top: 15px;

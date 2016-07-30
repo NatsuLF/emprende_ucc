@@ -6,3 +6,7 @@
     @include('shared.slide')
     @include('shared.myv')
 @endsection
+
+@section('footer')
+    @include('shared.footer')
+@endsection

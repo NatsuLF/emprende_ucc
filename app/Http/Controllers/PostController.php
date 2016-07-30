@@ -61,7 +61,7 @@ class PostController extends Controller
         $post->user_id = $current_user->id;
         $post->title = $request->title;
         $post->body = $request->body;
-        $post->summary = $request->summary;
+        $post->summary = trim($request->summary);
         $post->published = $published;
         $post->slug = str_slug($post->title, '_');
 
@@ -119,7 +119,7 @@ class PostController extends Controller
         $post->title = $request->title;
         $post->published = $published;
         $post->body = $request->body;
-        $post->summary = $request->summary;
+        $post->summary = trim($request->summary);
         $post->slug = str_slug($post->title, '_');
 
         $post->tags()->detach();

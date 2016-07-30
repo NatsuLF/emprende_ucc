@@ -29,3 +29,7 @@
         </div>
     @endforeach
 @endsection
+
+@section('footer')
+    @include('shared.footer')
+@endsection
