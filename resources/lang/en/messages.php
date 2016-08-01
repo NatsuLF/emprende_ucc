@@ -23,9 +23,11 @@ return [
 
         // MISIÓN VISIÓN
     'mission' => 'Mission',
-    'mission_content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eum totam, facere nemo reiciendis ullam, suscipit enim sed sit necessitatibus exercitationem recusandae impedit, nobis pariatur quos tenetur, sequi velit beatae.',
+    'mission_content' => '
+We are a company dedicated to research, innovation and development of apiculture products quality. We design, manufacture and market model hexagonal hives Vincent, equipment and accessories for beekeeping in order to meet the highest expectations of our customers. We are highly committed to environmental conservation, restoration of ecosystems, and social - economic development of beekeeping.',
     'view' => 'View',
-    'view_content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil perferendis laboriosam quae ex officia iusto id veniam non vero amet nam, quasi quia dolorum asperiores nisi voluptates, doloribus. Non, cumque.',
+    'view_content' => '
+Becoming a leader in the manufacture of hives and distribution and customer service are always looking for excellence and leadership in beekeeping.',
 
         // INFO
     'direction' => 'Address',

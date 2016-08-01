@@ -13,7 +13,7 @@
                             <i class="fa fa-phone" aria-hidden="true"></i> {{ $telephone }}
                             <br>
                         @endforeach
-
+                        <br>
                         <p>
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                             {{ Config::get('Contact.email') }}
