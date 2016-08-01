@@ -4,7 +4,7 @@
 
 @section('content')
     @include('shared.slide')
-    @include('shared.myv')
+    @include('shared.objetives')
 @endsection
 
 @section('footer')
