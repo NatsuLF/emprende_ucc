@@ -1,4 +1,4 @@
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs tabs">
     <li role="presentation" class="{{ $action == 'profile' ? 'active' : '' }}">
         <a href="{{ url('user/profile') }}" role="tab">Perfil</a>
     </li>

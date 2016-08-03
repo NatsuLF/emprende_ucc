@@ -32,7 +32,7 @@ class UserController extends Controller
         // $data = User::where('email', '=', $request->email)->first();
         $rules = [
             'name' => 'required',
-            'email' => 'required|email|unique:users',
+            'email' => 'required|email|unique:users,email,' .$current_user->id,
         ];
 
         $messages = [
