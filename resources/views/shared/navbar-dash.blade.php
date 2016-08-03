@@ -21,7 +21,7 @@
 
                     <ul class="dropdown-menu" role="menu">
                         <li>
-                            <a href="{{ url('/posts') }}">
+                            <a href="{{ url('/user/profile') }}">
                                 <i class="fa fa-btn fa-user"></i> Profile
                             </a>
                         </li>

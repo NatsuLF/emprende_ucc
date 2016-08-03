@@ -12,3 +12,8 @@ textarea#summary {
     margin-bottom: 15px;
 }
 
+/* Overwrite Bootstrap */
+.alert { margin-top: 5px; }
+
+.nav { margin-bottom: 10px; }
+

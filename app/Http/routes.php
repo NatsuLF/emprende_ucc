@@ -82,3 +82,21 @@ Route::post('items/{item}', ['uses' => 'ItemController@update', 'middleware' => 
 Route::delete('items/{item}', ['uses' => 'ItemController@delete', 'middleware' => 'auth']);
 
 Route::get('/images/remove/{image}', ['as' => 'remove_image', 'uses' => 'ImageController@delete', 'middleware' => 'auth']);
+
+// USERS
+Route::get('user/profile', [
+    'as' => 'profile',
+    'uses' => 'UserController@profile',
+    'middleware' => 'auth'
+]);
+
+Route::post('user/profile', [
+    'uses' => 'UserController@update_profile',
+    'middleware' => 'auth'
+]);
+
+Route::get('user/update_password', [
+    'as' => 'update_password',
+    'uses' => 'UserController@update_password',
+    'middleware' => 'auth'
+]);

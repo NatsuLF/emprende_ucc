@@ -11,7 +11,9 @@
 <body>
     <div class="col-md-3"></div>
     <div class="col-md-6">
-        <a href="{{ '/tags' }}" class="btn-back btn btn-primary"><i class="fa fa-arrow-left fa-fw" aria-hidden="true"></i>&nbsp; Regresar</a>
+        <a href="{{ '/tags' }}" class="btn-back btn btn-primary">
+            <i class="fa fa-arrow-left fa-fw" aria-hidden="true"></i> Regresar
+        </a>
 
         @yield('content')
     </div>

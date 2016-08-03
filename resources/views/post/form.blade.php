@@ -8,8 +8,6 @@
     <textarea id="summary" name="summary" class="form-control" required>
         {{ isset($post->summary) ? $post->summary : '' }}
     </textarea>
-
-    {{-- <input type="text" class="form-group" value="{{ $post->summary }}"> --}}
 </div>
 
 <div class="form-group">
