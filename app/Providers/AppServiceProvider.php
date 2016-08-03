@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Validator;
+use App\Http\Validators\HashValidator;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,6 +15,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Validator::resolver(function($translator, $data, $rules, $messages) {
+            return new HashValidator($translator, $data, $rules, $messages);
+        });
+
         app('view')->composer(['layouts.master' , 'layouts.app_backend', 'layouts.dfm'], function ($view) {
             $action = app('request')->route()->getAction();
             $controller = class_basename($action['controller']);

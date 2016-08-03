@@ -95,8 +95,13 @@ Route::post('user/profile', [
     'middleware' => 'auth'
 ]);
 
-Route::get('user/update_password', [
-    'as' => 'update_password',
+Route::get('user/password', [
+    'as' => 'password',
+    'uses' => 'UserController@password',
+    'middleware' => 'auth'
+]);
+
+Route::post('user/update_password', [
     'uses' => 'UserController@update_password',
     'middleware' => 'auth'
 ]);

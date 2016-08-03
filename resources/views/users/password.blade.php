@@ -12,11 +12,22 @@
     </div>
     @include('shared.user_navs')
 
-    <form action="" method="" class="" role="form">
+    <form action="/user/update_password" method="POST" autocomplete="off" novalidate>
+        {{ csrf_field() }}
         @include('shared.user_update_pass')
 
         <button type="submit" class="btn btn-primary">Actualizar</button>
     </form>
 
     @include('shared.message')
+
+    @if (count($errors) > 0)
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
 @endsection
