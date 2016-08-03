@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-ex1-collapse" area-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -11,7 +11,7 @@
             <img src="http://lacolmenaonline.com/wp-content/uploads/2016/04/La_colmena_logo-2.png">
           </a>
         </div>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li class="{{ $controller == 'StaticController' && $action == 'about' ? 'active' : '' }}">
                     <a href="{{ url('/') }}">

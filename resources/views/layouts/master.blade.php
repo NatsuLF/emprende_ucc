@@ -21,8 +21,8 @@
         <link rel="stylesheet" href="{{ asset('stylesheets/styles.css') }}">
     </head>
     <body>
+        @include('shared.navbar')
 
-    @include('shared.navbar')
         <div class="container">
             <div class="row">
                 @yield('content')
