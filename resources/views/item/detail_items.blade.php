@@ -22,7 +22,9 @@
                     href="{{ url()->previous() . '#' . $item->slug }}">
                         {{ trans('messages.btn_go_back_item') }}
                     </a>
-                    <h4 class="">{{ $item->name }}</h4>
+                    <h4 class=""><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        {{ $item->name }}
+                    </h4>
 
                     <small>Descripcion</small>
                     <p>{{ $item->description }}</p>
@@ -30,7 +32,7 @@
                     <small>Precio</small>
                     <p>{{ '$ ' . $item->price }}</p>
 
-                    <div>
+                    <div class="btn-buy">
                         <button type="button" class="btn btn-success"><i class="fa fa-paypal fa-lg" aria-hidden="true"></i>
                          {{ trans('messages.btn_buy_now') }}</button>
                         <button type="button" class="btn btn-info"><i class="fa fa-cart-plus fa-lg" aria-hidden="true"></i>

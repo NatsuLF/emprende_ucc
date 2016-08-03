@@ -50,6 +50,9 @@ div.container-fluid {
     text-align: right;
 }
 
+.btn-buy {
+    margin-bottom: 15px;
+}
 
 .panel-primary {
     border-color: #FFF;

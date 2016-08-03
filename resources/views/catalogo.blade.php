@@ -7,8 +7,8 @@
         <div class="well" id="{{ $item->slug }}">
             <div class="row">
                 <div class="col-md-6">
-                    <h4 class="">{{ $item->name }}</h4>
-
+                    <h4 class=""><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    {{ $item->name }}</h4>
                     <small>Descripcion</small>
                     <p>{{ $item->description }}</p>
 
