@@ -13,27 +13,23 @@ class TagTableSeeder extends Seeder
     public function run()
     {
         DB::table('tags')->insert([
-            'name' => str_random(10)
+            'name' => 'Proyectos'
         ]);
 
         DB::table('tags')->insert([
-            'name' => str_random(10)
+            'name' => 'Emprendedurismo'
         ]);
 
         DB::table('tags')->insert([
-            'name' => str_random(10)
+            'name' => 'UCC'
         ]);
 
         DB::table('tags')->insert([
-            'name' => str_random(10)
+            'name' => 'PIMES'
         ]);
 
         DB::table('tags')->insert([
-            'name' => str_random(10)
-        ]);
-
-        DB::table('tags')->insert([
-            'name' => str_random(10)
+            'name' => 'Educación'
         ]);
     }
 }
