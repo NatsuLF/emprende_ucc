@@ -20,30 +20,6 @@ div.container-fluid {
     padding-bottom: 20px;
 }
 
-.panel-primary > .panel-heading {
-    background-color: #FFD600;
-    border-color: #FFF;
-    color: #000000;
-}
-
-.btn-primary {
-    background-color: #FFD600;
-    border-color: #FFF;
-    color: #000000;
-}
-
-.btn-primary:hover {
-    color: #FFF;
-    background-color: #FFD600;
-    border-color: #000000;
-}
-
-.btn-primary:focus {
-    color: #fff;
-    background-color: #FFD600;
-    border-color: #FFF;
-}
-
 .btn-read_more {
     margin-top: -10px;
     margin-bottom: 15px;

@@ -17,7 +17,6 @@
         <title>Proyecto Apicola - @yield('title')</title>
         <link rel="stylesheet" href="{{ asset('components/bootstrap/dist/css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('components/font-awesome/css/font-awesome.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('stylesheets/navbar.css') }}">
         <link rel="stylesheet" href="{{ asset('stylesheets/styles.css') }}">
     </head>
     <body>
