@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="{{ URL::asset('components/bootstrap/dist/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('components/font-awesome/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('stylesheets/dashboard/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('stylesheets/simple-sidebar.css') }}">
+
 </head>
 <body>
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
-        <a href="{{ '/tags' }}" class="btn-back btn btn-primary">
-            <i class="fa fa-arrow-left fa-fw" aria-hidden="true"></i> Regresar
-        </a>
-
-        @yield('content')
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                @include('shared.sidebar')
+            </div>
+            <div class="col-md-10">
+            <br><br>
+                @yield('content')
+            </div>
+        </div>
     </div>
-    <div class="col-md-3"></div>
 </body>
 </html>

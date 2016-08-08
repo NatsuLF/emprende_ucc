@@ -12,9 +12,12 @@ class DeleteColumnEmailPostsTable extends Migration
      */
     public function up()
     {
-        Schema::table('posts', function (Blueprint $table) {
-            $table->dropColumn('email');
-        });
+        if (Schema::hasColumn('posts', 'email'))
+        {
+            Schema::table('posts', function (Blueprint $table) {
+                $table->dropColumn('email');
+            });
+        }
     }
 
     /**

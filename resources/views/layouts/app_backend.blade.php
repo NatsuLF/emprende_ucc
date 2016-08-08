@@ -7,23 +7,31 @@
     <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="stylesheets/dashboard/app.css">
+    <link rel="stylesheet" href="stylesheets/simple-sidebar.css">
+
 </head>
 <body>
-    @include('shared.navbar-dash')
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-2">
                 @include('shared.sidebar')
             </div>
-            <div class="col-md-8">
+            <div class="col-md-10">
+                <br>
+                <a href="{{ Request::url() . '/create' }}" class="btn btn-primary pull-right"><i class="fa fa-plus-circle fa-fw" aria-hidden="true"></i>&nbsp; Crear</a>
+                <br><br>
                 @yield('content')
-            </div>
-            <div class="col-md-2">
-                <a href="{{ $_SERVER['REQUEST_URI'] . '/create' }}" class="btn btn-primary btn-block"><i class="fa fa-plus-circle fa-fw" aria-hidden="true"></i>&nbsp; Crear</a>
             </div>
         </div>
     </div>
     <script src="components/jquery/dist/jquery.min.js"></script>
     <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
 </body>
 </html>

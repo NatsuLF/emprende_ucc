@@ -19,13 +19,6 @@
                     {{ Config::get('Contact.email') }}
                 </p>
             </div>
-
-            <div class="col-md-6">
-                <img
-                    class="pull-right"
-                    src="https://dl.dropboxusercontent.com/s/gwmqrocq9hffaks/lg.png?dl=0"
-                    alt="Proyecto Apicola - UCC León">
-            </div>
         </div>
     </div>
 </footer>

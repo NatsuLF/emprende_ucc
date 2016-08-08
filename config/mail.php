@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'leodota7@gmail.com', 'name' => 'Proyecto Apicola'],
+    'from' => ['address' => 'leodota7@gmail.com', 'name' => 'Programa de emprendedurismo UCC'],
 
     /*
     |--------------------------------------------------------------------------

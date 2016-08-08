@@ -3,7 +3,6 @@
 @section('title', 'Posts')
 
 @section('content')
-    <div id="fb-root"></div>
     <div class="col-md-11">
         @foreach ($posts as $post)
             <div class="jumbotron">
@@ -16,7 +15,7 @@
                 <small> {{ $post->created_at->format('M j, Y') }}</small>
 
                 @foreach ($post->tags as $tag)
-                    <span class="label label-success">{{ $tag->name }}</span>
+                    <span class="label label-info">{{ $tag->name }}</span>
                 @endforeach
 
                 <p>{!! $post->body !!}</p>

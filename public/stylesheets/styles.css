@@ -30,10 +30,6 @@ div.container-fluid {
     margin-bottom: 15px;
 }
 
-.panel-primary {
-    border-color: #FFF;
-}
-
 a > .fa {
     padding-top: 10px;
     text-decoration: none;

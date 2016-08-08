@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="{{ asset('components/font-awesome/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('stylesheets/dashboard/app.css') }}">
     <link rel="stylesheet" href="{{ asset('components/summernote/dist/summernote.css') }}">
+    <link rel="stylesheet" href="{{ asset('stylesheets/simple-sidebar.css') }}">
 </head>
 <body>
-    <div class="col-md-1"></div>
-    <div class="col-md-9">
-        <a href="{{ '/posts' }}" class="btn-back btn btn-primary"><i class="fa fa-arrow-left fa-fw" aria-hidden="true"></i>&nbsp; Regresar</a>
-
+    <div class="col-md-2">
+        @include('shared.sidebar')
+    </div>
+    <div class="col-md-8">
+    <br><br>
         @yield('content')
     </div>
     <div class="col-md-2">
