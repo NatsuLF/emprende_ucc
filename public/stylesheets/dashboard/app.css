@@ -1,18 +1,6 @@
-body {
-}
-
 textarea#summary {
     resize: vertical;
     min-height: 100px;
     max-height: 150px;
 }
-
-.btn-back {
-    margin-bottom: 15px;
-}
-
-/* Overwrite Bootstrap */
-.alert { margin-top: 5px; }
-
-.tabs { margin-bottom: 10px; }
 

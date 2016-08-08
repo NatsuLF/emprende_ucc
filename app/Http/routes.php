@@ -14,7 +14,6 @@ Route::get('/login', function() {
 });
 
 // STATIC
-
 Route::get('/', 'StaticController@about');
 
 Route::get('/services', 'StaticController@services');
@@ -29,7 +28,6 @@ Route::get('tags', 'TagController@index');
 
 Route::get('tags/create', 'TagController@create');
 
-
 Route::post('tags', 'TagController@save');
 
 Route::get('tags/{tag}', 'TagController@edit');
@@ -40,7 +38,6 @@ Route::delete('tags/{tag}', 'TagController@delete');
 
 // AUTH
 Route::auth();
-
 
 // POST - Public
 Route::get('blog', 'PostController@blog');
@@ -61,7 +58,6 @@ Route::get('posts/{post}', ['uses' => 'PostController@edit', 'middleware' => 'au
 Route::post('posts/{post}', ['uses' => 'PostController@update', 'middleware' => 'auth']);
 
 Route::delete('posts/{post}', ['uses' => 'PostController@delete', 'middleware' => 'auth']);
-
 
 // ITEMS - Public
 Route::get('catalogo', 'ItemController@catalogo');

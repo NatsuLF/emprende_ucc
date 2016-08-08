@@ -19,7 +19,7 @@ class AppServiceProvider extends ServiceProvider
             return new HashValidator($translator, $data, $rules, $messages);
         });
 
-        app('view')->composer(['layouts.master' , 'layouts.app_backend', 'layouts.dfm'], function ($view) {
+        app('view')->composer(['layouts.master' , 'layouts.app_backend', 'layouts.dfm', 'layouts.dfmf'], function ($view) {
             $action = app('request')->route()->getAction();
             $controller = class_basename($action['controller']);
             list($controller, $action) = explode('@', $controller);
