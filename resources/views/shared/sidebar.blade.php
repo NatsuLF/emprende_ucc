@@ -6,17 +6,26 @@
                     PEIDE
                 </a>
             </li>
-
-            <li role="presentation" class="{{ $controller == 'TagController' ? 'active' : 'no-active' }}">
-                <a href="{{ url('/posts') }}"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i> Posts</a>
+            <li role="presentation" class="{{ $controller == 'PostController' ? 'active' : 'no-active' }}">
+                <a href="{{ url('/posts') }}">
+                    <i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i>
+                        Posts
+                </a>
             </li>
             <li role="presentation" class="{{ $controller == 'TagController' ? 'active' : 'no-active' }}">
-                <a href="{{ url('/tags') }}"><i class="fa fa-tags fa-lg" aria-hidden="true"></i> Categorias</a>
+                <a href="{{ url('/tags') }}">
+                    <i class="fa fa-tags fa-lg" aria-hidden="true"></i>
+                        Categorias
+                </a>
             </li>
             <hr>
 
             @if (Auth::guest())
-                <li><a href="{{ url('/login') }}">Login</a></li>
+                <li>
+                    <a href="{{ url('/login') }}">
+                        Login
+                    </a>
+                </li>
             @else
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
