@@ -32,16 +32,22 @@ body {
 /* Customize container */
 @media (min-width: 1366px) {
   .container {
+    border-top: #02a406 solid 1px;
+    border-left: #02a406 solid 1px;
+    border-right: #02a406 solid 1px;
+/*     border-radius: 5px 5px 0px 0px; */
+    margin-top: 40px;
+    padding-top: 10px;
     max-width: 1024px;
   }
 }
 .container-narrow > hr {
-  margin: 30px 0;
+  margin: 30px;
 }
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  text-align: ju;
+  width: 100%;
   border-bottom: 1px solid #e5e5e5;
 }
 

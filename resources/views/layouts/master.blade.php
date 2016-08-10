@@ -24,7 +24,12 @@
 
     </head>
     <body>
-        <img src="https://dl.dropboxusercontent.com/s/r9sv7btjmznuh07/LOGO%20UCC-80px.png?dl=0" class="img-responsive pull-left" id="logo-ucc" alt="Responsive image">
+        <div class="clearfix logos">
+                <a href="{{ url('/') }}" class="navbar-left">
+                    <img src="https://dl.dropboxusercontent.com/s/r93htr4lhjti3tf/LOGO%20UCC%20OFICIAL-50px.png?dl=0" class="img-responsive" id="logo-ucc" alt="Responsive image">
+                    <img src="https://dl.dropboxusercontent.com/s/sw087a1fj3xtp6u/logo-PEIDE-70px.png?dl=0" class="img-responsive" id="logo-peide" alt="Responsive image">
+                </a>
+        </div>
         <div class="container">
             @include('shared.navbar')
             <div class="row marketing">
