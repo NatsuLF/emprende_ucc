@@ -19,9 +19,11 @@
                             {{ $post->title }}
 
                             <div class="pull-right">
-                                @foreach ($post->tags as $tag)
-                                    <span class="label label-success">{{ $tag->name }}</span>
-                                @endforeach
+                                <div class="row">
+                                    @foreach ($post->tags as $tag)
+                                        <span class="label label-success">{{ $tag->name }}</span>
+                                    @endforeach
+                                </div>
                             </div>
                         </div>
                     </div>
