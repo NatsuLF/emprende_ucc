@@ -110,8 +110,8 @@ a {
 .nav-pills > li > a:focus,
 .nav-pills > li > a:hover {
   text-decoration: none;
-  background-color: #53fd57;
-  color: #015003;
+  background-color: #029306;
+  color: #FFF;
 }
 
 .well { background: #FFF; }

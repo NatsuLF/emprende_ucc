@@ -32,7 +32,6 @@ body {
 /* Customize container */
 @media (min-width: 1366px) {
   .container {
-    border-top: #02a406 solid 1px;
     border-left: #02a406 solid 1px;
     border-right: #02a406 solid 1px;
 /*     border-radius: 5px 5px 0px 0px; */
