@@ -35,7 +35,7 @@ label {
 
 textarea#body {
     resize: vertical;
-    min-height: 200px;
+    min-height: 150px;
     max-height: auto;
 }
 
@@ -86,6 +86,14 @@ footer {
 
 /* OVERWRITING BOOTSTRAP*/
 
+.panel-footer {
+    background-color: #FFF;
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+    border-top: none;
+    padding: 10px 10px;
+}
+
 a {
     color: #015003;
     text-decoration: none;
@@ -94,8 +102,16 @@ a {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:focus,
 .nav-pills > li.active > a:hover {
+    text-decoration: none;
     background-color: #015003;
     color: #FFF;
+}
+
+.nav-pills > li > a:focus,
+.nav-pills > li > a:hover {
+  text-decoration: none;
+  background-color: #53fd57;
+  color: #015003;
 }
 
 .well { background: #FFF; }

@@ -27,16 +27,19 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="panel-body">
                         <p>{!! $post->summary !!}</p>
                     </div>
+                    <div class="panel-footer">
+                        <div class="clearfix">
+                            <a href="{{ '/blog/' . $post->slug }}" class="btn btn-primary pull-right">
+                                {{ trans('messages.btn_blog') }} <i class="fa fa-caret-square-o-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="clearfix">
-                    <a href="{{ '/blog/' . $post->slug }}" class="btn btn-primary pull-right">
-                        {{ trans('messages.btn_blog') }} <i class="fa fa-caret-square-o-right" aria-hidden="true"></i>
-                    </a>
-                </div>
             @endforeach
         @else
             <p>Nada que mostrar</p>

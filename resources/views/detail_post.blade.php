@@ -11,14 +11,14 @@
                         {{ trans('messages.btn_go_back_post') }}
                     </a>
 
-                    <h2>{{ $post->title }}</h2>
+                    <h3>{{ $post->title }}</h3>
                         <cite>{{ $post->user->name }}</cite>
                         <small> {{ $post->created_at->format('M j, Y') }}</small>
 
                     @foreach ($post->tags as $tag)
                         <span class="label label-info">{{ $tag->name }}</span>
                     @endforeach
-
+                    <br><br>
                     <p>{!! $post->body !!}</p>
                 </div>
             @endforeach
