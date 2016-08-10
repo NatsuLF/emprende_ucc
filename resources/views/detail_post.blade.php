@@ -4,23 +4,25 @@
 
 @section('content')
     <div class="col-md-11">
-        @foreach ($posts as $post)
-            <div class="jumbotron">
-                <a class="btn btn-success btn-back" href="{{ url()->previous() . '#' . $post->slug }}">
-                    {{ trans('messages.btn_go_back_post') }}
-                </a>
+        <div class="row">
+            @foreach ($posts as $post)
+                <div class="well jumbotron">
+                    <a class="btn btn-success btn-back" href="{{ url()->previous() . '#' . $post->slug }}">
+                        {{ trans('messages.btn_go_back_post') }}
+                    </a>
 
-                <h2>{{ $post->title }}</h2>
-                <cite>{{ $post->user->name }}</cite>
-                <small> {{ $post->created_at->format('M j, Y') }}</small>
+                    <h2>{{ $post->title }}</h2>
+                        <cite>{{ $post->user->name }}</cite>
+                        <small> {{ $post->created_at->format('M j, Y') }}</small>
 
-                @foreach ($post->tags as $tag)
-                    <span class="label label-info">{{ $tag->name }}</span>
-                @endforeach
+                    @foreach ($post->tags as $tag)
+                        <span class="label label-info">{{ $tag->name }}</span>
+                    @endforeach
 
-                <p>{!! $post->body !!}</p>
-            </div>
-        @endforeach
+                    <p>{!! $post->body !!}</p>
+                </div>
+            @endforeach
+        </div>
     </div>
 
     <div class="col-md-1">
