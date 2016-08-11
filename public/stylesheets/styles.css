@@ -29,82 +29,87 @@ body {
 }
 
 label {
-    font-weight: normal;
-    font-size: 13px;
+  font-weight: normal;
+  font-size: 13px;
 }
 
 textarea#body {
-    resize: vertical;
-    min-height: 150px;
-    max-height: auto;
+  resize: vertical;
+  min-height: 150px;
+  max-height: auto;
 }
 
-div.container-fluid {
-    padding-bottom: 20px;
-}
+div.container-fluid { padding-bottom: 20px; }
 
 .btn-read_more {
-    margin-top: -10px;
-    margin-bottom: 15px;
-    text-align: right;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  text-align: right;
 }
 
-.btn-buy {
-    margin-bottom: 15px;
-}
+.btn-buy { margin-bottom: 15px; }
 
 a > .fa {
-    padding-top: 10px;
-    text-decoration: none;
+  padding-top: 10px;
+  text-decoration: none;
 }
 
 .navbar-brand > img {
-    widows: 50;
-    height: 50px;
-    display: block;
-    padding: 0px;
-    margin-top: -11px;
+  widows: 50;
+  height: 50px;
+  display: block;
+  padding: 0px;
+  margin-top: -11px;
 }
 
-.shared-social {
-    margin-top: 75px;
-}
+.shared-social { margin-top: 75px; }
 
 .album-cat {
-    background-color: #FFF;
-    height: 200px;
-    width: 180px;
+  background-color: #FFF;
+  height: 200px;
+  width: 180px;
 }
 
 footer {
-    bottom: 0;
-    color: #444;
-    margin-top: 15px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+  bottom: 0;
+  color: #444;
+  margin-top: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 /* OVERWRITING BOOTSTRAP*/
 
+.navbar-default {
+  clear: both;
+  border: none;
+  background: none;
+}
+
+.navbar-collapse {
+  border-top: none;
+}
+
 .panel-footer {
-    background-color: #FFF;
-    border-bottom-left-radius: none;
-    border-bottom-right-radius: none;
-    border-top: none;
-    padding: 10px 10px;
+  margin: 0;
+  background-color: #FFF;
+  border-bottom-left-radius: none;
+  border-bottom-right-radius: none;
+  border-top: none;
+  padding: 10px 10px;
 }
 
 a {
-    color: #015003;
-    text-decoration: none;
+  color: #015003;
+  text-decoration: none;
 }
 
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:focus,
 .nav-pills > li.active > a:hover {
-    text-decoration: none;
-    background-color: #015003;
-    color: #FFF;
+  text-decoration: none;
+  background-color: #015003;
+  color: #FFF;
 }
 
 .nav-pills > li > a:focus,
@@ -118,13 +123,11 @@ a {
 
 .language { padding-top: 5px;  }
 
-.carousel {
-    margin-bottom: 15px;
-}
+.carousel { margin-bottom: 15px; }
 
 .carousel img {
-    max-height: 500px;
-    min-width: 100%;
+  max-height: 500px;
+  min-width: 100%;
 }
 
 /* SOCIAL MEDIA BUTTOMS STYLES */

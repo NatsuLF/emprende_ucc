@@ -46,6 +46,16 @@
         <script src="{{ asset('components/jquery/dist/jquery.min.js') }}"></script>
         <script src="{{ asset('components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/textarea.js') }}"></script>
+        <script type="text/javascript">
+          $('#bs-example-navbar-collapse-1').on('show.bs.collapse', function() {
+              $('.nav-pills').addClass('nav-stacked');
+          });
+
+          //Unstack menu when not collapsed
+          $('#bs-example-navbar-collapse-1').on('hide.bs.collapse', function() {
+              $('.nav-pills').removeClass('nav-stacked');
+          });
+        </script>
 
         @yield('javascripts')
     </body>

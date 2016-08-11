@@ -40,9 +40,6 @@ body {
     max-width: 1024px;
   }
 }
-.container-narrow > hr {
-  margin: 30px;
-}
 
 /* Main marketing message and sign up button */
 .jumbotron {
