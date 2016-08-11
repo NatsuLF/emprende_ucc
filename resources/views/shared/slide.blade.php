@@ -9,7 +9,7 @@
             <img
                 alt="First slide"
                 class="img-responsive"
-                src="https://dl.dropboxusercontent.com/s/skfil0rt6e1p7mk/colmena.jpg?dl=0">
+                src="https://dl.dropboxusercontent.com/s/86y20fc1x4jbli4/4f2fa7caaf214c6d68a5fea556d47c40.jpg?dl=0">
             <div class="carousel-caption">
                 <h3>Lorem</h3>
                 <p>Parrafo</p>
@@ -19,7 +19,7 @@
             <img
                 alt="Second slide"
                 class="img-responsive"
-                src="https://dl.dropboxusercontent.com/s/no5hswj2xculkou/colmena2.jpg?dl=0">
+                src="https://dl.dropboxusercontent.com/s/bro58a6gfarzmoi/b27d1c3568120275f3c862fccbc2ba9c.jpg?dl=0">
             <div class="carousel-caption">
                 <h3>Lorem</h3>
                 <p>Parrafo</p>
@@ -29,7 +29,7 @@
             <img
                 alt="Third slide"
                 class="img-responsive"
-                src="https://dl.dropboxusercontent.com/s/cjyv9oqygcwambh/colmena3.jpg?dl=0">
+                src="https://dl.dropboxusercontent.com/s/ovl317mlyezb2ex/INVITACION03-1-900x444.jpg?dl=0">
             <div class="carousel-caption">
                 <h3>Lorem</h3>
                 <p>Parrafo</p>

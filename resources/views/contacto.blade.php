@@ -24,7 +24,7 @@
                         <textarea class="form-control" rows="1" name="body" id="body"></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">{{ trans('messages.btn_contact_us') }}</button>
+                    <button type="submit" class="btn btn-success">{{ trans('messages.btn_contact_us') }}</button>
                 </form>
             </div>
         </div>

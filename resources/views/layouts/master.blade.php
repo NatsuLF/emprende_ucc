@@ -5,15 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-{{--         <meta itemprop="name" content="Blog de Proyecto Apicoal - UCC">
-        <meta itemprop="description" content="Blog informativo del Proyecto apicola - UCC">
-        <meta itemprop="image" content="https://dl.dropboxusercontent.com/s/qodhyrzlqiimghi/Logo.png?dl=0"> --}}
+        <meta itemprop="name" content="Noticias PEIDE - UCC">
+        <meta itemprop="description" content="Programa de Emprendedurismo, Innovación y Desarrollo Empresarial - UCC">
+        <meta itemprop="image" content="https://dl.dropboxusercontent.com/s/tu8lhv6i3umocjv/logo-PEIDE.png?dl=0">
 
-        {{-- <meta property="og:url"           content="http://www.localhost:8000/blog/" />
+        <meta property="og:url"           content="{{ Request::url() }}" />
         <meta property="og:type"          content="website" />
-        <meta property="og:title"         content="Proyecto Apicola - UCC" />
-        <meta property="og:description"   content="Diseño de colmenas modelo Vincent" />
-        <meta property="og:image"         content="https://dl.dropboxusercontent.com/s/qodhyrzlqiimghi/Logo.png?dl=0" /> --}}
+        <meta property="og:title"         content="Noticias PEIDE - UCC" />
+        <meta property="og:description"   content="Programa de Emprendedurismo, Innovación y Desarrollo Empresarial - UCC" />
+        <meta property="og:image"         content="https://dl.dropboxusercontent.com/s/tu8lhv6i3umocjv/logo-PEIDE.png?dl=0" />
 
         <title>Programa de emprendedurismo - @yield('title')</title>
 

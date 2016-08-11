@@ -18,7 +18,7 @@
                             <i class="fa fa-caret-right" aria-hidden="true"></i>
                             {{ $post->title }}
 
-                            <div class="pull-right">
+                            <div class="pull-right clearfix">
                                 <div class="row">
                                     @foreach ($post->tags as $tag)
                                         <span class="label label-success">{{ $tag->name }}</span>
@@ -33,8 +33,8 @@
                     </div>
                     <div class="panel-footer">
                         <div class="clearfix">
-                            <a href="{{ '/blog/' . $post->slug }}" class="btn btn-primary pull-right">
-                                {{ trans('messages.btn_blog') }} <i class="fa fa-caret-square-o-right" aria-hidden="true"></i>
+                            <a href="{{ '/blog/' . $post->slug }}" class="btn btn-success pull-right">
+                                {{ trans('messages.btn_blog') }} <i class="fa fa-share" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>

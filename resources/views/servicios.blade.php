@@ -5,7 +5,7 @@
 @section('content')
 
 	<div class="col-md-8 col-md-offset-2">
-		<div class="panel panel-primary">
+		<div class="panel panel-success">
 			<div class="panel-heading">
 				<h3 class="panel-title">Servicio 1</h3>
 			</div>
@@ -21,7 +21,7 @@
 			</div>
 		</div>
 
-		<div class="panel panel-primary">
+		<div class="panel panel-success">
 			<div class="panel-heading">
 				<h3 class="panel-title">Servicio 2</h3>
 			</div>
