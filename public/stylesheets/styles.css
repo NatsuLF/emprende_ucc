@@ -1,7 +1,9 @@
 body {
-    padding-top: 70px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+  background-image: url('https://dl.dropboxusercontent.com/s/mx8n5hur64s1aqm/grey_wash_wall_%402X.png?dl=0');
+  background-repeat: repeat;
+  padding-top: 70px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .logos {
@@ -13,6 +15,7 @@ body {
 }
 
 #logo-ucc {
+  background-color: #FFF;
   margin-top: -70px;
   margin-left: 10px;
   padding: 3px;
@@ -21,6 +24,7 @@ body {
 }
 
 #logo-peide {
+  background-color: #FFF;
   margin-top: -65px;
   margin-left: 80px;
   padding: 3px;
