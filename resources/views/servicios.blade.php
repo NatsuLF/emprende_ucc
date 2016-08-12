@@ -4,10 +4,10 @@
 
 @section('content')
 
-	<div class="col-md-8 col-md-offset-2">
+	<div class="col-md-6">
 		<div class="panel panel-success">
 			<div class="panel-heading">
-				<h3 class="panel-title">Servicio 1</h3>
+				<h3 class="panel-title">Capacitaciones</h3>
 			</div>
 			<div class="panel-body">
 				<p>
@@ -20,10 +20,12 @@
 				</p>
 			</div>
 		</div>
+	</div>
 
+	<div class="col-md-6">
 		<div class="panel panel-success">
 			<div class="panel-heading">
-				<h3 class="panel-title">Servicio 2</h3>
+				<h3 class="panel-title">Proyectos</h3>
 			</div>
 			<div class="panel-body">
 				<p>

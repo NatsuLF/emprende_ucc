@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="col-md-6">
-        <div class="panel panel-primary">
+        <div class="panel panel-success">
             <div class="panel-heading">{{ trans('messages.title_panel') }}</div>
             <div class="panel-body">
                 <form action="sendMail" method="post" role="form">
@@ -24,7 +24,9 @@
                         <textarea class="form-control" rows="1" name="body" id="body"></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-success">{{ trans('messages.btn_contact_us') }}</button>
+                    <button type="submit" class="btn btn-default">
+                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i> {{ trans('messages.btn_contact_us') }}
+                    </button>
                 </form>
             </div>
         </div>

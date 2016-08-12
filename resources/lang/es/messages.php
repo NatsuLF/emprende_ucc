@@ -15,7 +15,7 @@ return [
 
         // BLOG
     'banner' => 'Hola, Bienvenido',
-    'banner_content' => 'En esta area podras informarte acerca de las diversas actividades que realizamos, ademas de publicar contenidos que te ayudaran a entender de que se trata la apicultura. Esperemos que disfrutes de nuestro pequeño Blog.',
+    'banner_content' => 'El Programa de Emprendedurismo de la Universidad de Ciencias Comerciales nació hace más 5 años con la finalidad de crear espacios en los que nuestros estudiantes tengan la oportunidad de formular ideas de negocio, y recibir mentoría para convertir esas ideas de negocio en una empresa tangible; en una empresa que cree prosperidad y aprendizaje para todos los que se involucren directa o indirectamente en ella.',
 
         // MISIÓN VISIÓN
     'mission' => 'Mision',
