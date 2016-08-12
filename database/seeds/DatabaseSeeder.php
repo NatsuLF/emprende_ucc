@@ -24,16 +24,18 @@ class DatabaseSeeder extends Seeder
         DB::table('posts')->delete();
 
         $this->command->info('Creating users');
-        $leo = User::create([
-            'name' => 'Leonel Barrera',
-            'email' => 'leodota7@gmail.com',
-            'password' => bcrypt('mardan')
+        $default_user = User::create([
+            'name' => env('DEFAULT_USER_NAME'),
+            'email' => env('DEFAULT_USER_EMAIL'),
+            'password' => bcrypt(env('DEFAULT_USER_PASSWORD'))
         ]);
-        $mario = User::create([
-            'name' => 'Mario Martinez',
-            'email' => 'mario.martinez@ucc.edu.ni',
-            'password' => bcrypt('nami')
+
+        $another_default_user = User::create([
+            'name' => env('ANOTHER_DEFAULT_USER_NAME'),
+            'email' => env('ANOTHER_DEFAULT_USER_EMAIL'),
+            'password' => bcrypt(env('ANOTHER_DEFAULT_USER_PASSWORD'))
         ]);
+
         $this->command->info('Creating tags');
         $tag1 = Tag::create([
             'name' => 'Tag1'
@@ -65,15 +67,15 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $this->command->info('Linking tags and posts');
-        $post1->tags()->attach($tag1->id);
-        $post1->tags()->attach($tag2->id);
-        $post1->tags()->attach($tag3->id);
-        $post2->tags()->attach($tag1->id);
-        $post2->tags()->attach($tag4->id);
+            $post1->tags()->attach($tag1->id);
+            $post1->tags()->attach($tag2->id);
+            $post1->tags()->attach($tag3->id);
+            $post2->tags()->attach($tag1->id);
+            $post2->tags()->attach($tag4->id);
 
         $this->command->info('Linking users with posts');
-        $mario->posts()->save($post1);
-        $leo->posts()->save($post2);
+            $default_user->posts()->save($post1);
+            $another_default_user->posts()->save($post2);
 
         $this->command->info('Seeding ended with no problems');
     }
