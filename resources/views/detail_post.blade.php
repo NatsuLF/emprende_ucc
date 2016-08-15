@@ -7,7 +7,7 @@
         <div class="row">
             @foreach ($posts as $post)
                 <div class="well jumbotron">
-                    <a class="btn btn-success btn-back" href="{{ url()->previous() . '#' . $post->slug }}">
+                    <a class="btn btn-default btn-back" href="{{ url()->previous() . '#' . $post->slug }}">
                         {{ trans('messages.btn_go_back_post') }}
                     </a>
 
