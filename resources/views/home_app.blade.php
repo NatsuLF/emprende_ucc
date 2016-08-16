@@ -3,10 +3,9 @@
 @section('title', 'Home')
 
 @section('content')
-    <div class="col-md-12">
-        @include('shared.slide')
-        @include('shared.objetives')
-    </div>
+    @include('shared.slide')
+    @include('shared.objetives')
+    @include('shared.friends_pages')
 @endsection
 
 @section('footer')
