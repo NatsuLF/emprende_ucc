@@ -24,11 +24,24 @@
 
     </head>
     <body>
-        <div class="clearfix logos">
-                <a href="{{ url('/') }}" class="navbar-left">
-                    <img src="https://dl.dropboxusercontent.com/s/r93htr4lhjti3tf/LOGO%20UCC%20OFICIAL-50px.png?dl=0" class="img-responsive" id="logo-ucc" alt="Responsive image">
-                    <img src="https://dl.dropboxusercontent.com/s/sw087a1fj3xtp6u/logo-PEIDE-70px.png?dl=0" class="img-responsive" id="logo-peide" alt="Responsive image">
-                </a>
+        <div class="banner1">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+            <div class="box box6"></div>
+            <div class="box box7"></div>
+            <div class="box box8"></div>
+            <div class="box box9"></div>
+            <div class="box box10"></div>
+        </div>
+
+        <div class="logos">
+            <a href="{{ url('/') }}" class="navbar-left">
+                <img src="https://dl.dropboxusercontent.com/s/r93htr4lhjti3tf/LOGO%20UCC%20OFICIAL-50px.png?dl=0" class="img-responsive" id="logo-ucc" alt="Responsive image">
+                <img src="https://dl.dropboxusercontent.com/s/sw087a1fj3xtp6u/logo-PEIDE-70px.png?dl=0" class="img-responsive" id="logo-peide" alt="Responsive image">
+            </a>
         </div>
         <div class="container">
             @include('shared.navbar')
@@ -51,7 +64,6 @@
               $('.nav-pills').addClass('nav-stacked');
           });
 
-          //Unstack menu when not collapsed
           $('#bs-example-navbar-collapse-1').on('hide.bs.collapse', function() {
               $('.nav-pills').removeClass('nav-stacked');
           });
