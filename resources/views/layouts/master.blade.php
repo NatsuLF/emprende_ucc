@@ -52,7 +52,7 @@
             </div>
 
             <footer class="footer">
-                <p>&copy; 2016 PEIDE, UCC-León, Nicaragua</p>
+                <p>&copy; 2016 Programa de Emprendedurismo, Innovación y Desarrollo Empresarial (PEIDE), UCC-León, Nicaragua</p>
             </footer>
         </div>
 
