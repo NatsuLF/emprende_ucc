@@ -16,17 +16,17 @@
       <li role="presentation" class="{{ $controller == 'StaticController' && $action == 'about' ? 'active' : '' }}">
         <a href="{{ url('/') }}">Quienes somos</a>
       </li>
-      <li role="presentation" class="{{ $controller == 'Politicas' ? 'active' : 'no-active' }}">
-        <a href="{{ url('blog') }}">Politicas</a>
+      <li role="presentation" class="{{ $controller == 'StaticController' && $action == 'politics' ? 'active' : '' }}">
+        <a href="{{ url('politics') }}">Politicas</a>
       </li>
       <li role="presentation" class="{{ $controller == 'StaticController' && $action == 'services' ? 'active' : '' }}">
         <a href="{{ url('services') }}">Proyectos</a>
       </li>
-      <li role="presentation" class="{{ $controller == 'Propiedad intelectual' ? 'active' : 'no-active' }}">
-        <a href="{{ url('blog') }}">Propiedad intelectual</a>
+      <li role="presentation" class="{{ $controller == 'StaticController' && $action == 'property' ? 'active' : '' }}">
+        <a href="{{ url('property') }}">Propiedad intelectual</a>
       </li>
-      <li role="presentation" class="{{ $controller == 'Testimonio' ? 'active' : 'no-active' }}">
-        <a href="{{ url('blog') }}">Testimonio</a>
+      <li role="presentation" class="{{ $controller == 'StaticController' && $action == 'testimony' ? 'active' : '' }}">
+        <a href="{{ url('testimony') }}">Testimonio</a>
       </li>
       <li role="presentation" class="{{ $controller == 'PostController' ? 'active' : 'no-active' }}">
         <a href="{{ url('blog') }}">Noticias</a>

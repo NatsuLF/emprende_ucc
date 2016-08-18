@@ -13,8 +13,24 @@ class StaticController extends Controller
         return view('home_app');
     }
 
+    public function politics()
+    {
+        return view('politics');
+    }
+
     public function services()
     {
         return view('servicios');
     }
+
+    public function property()
+    {
+        return view('property');
+    }
+
+    public function testimony()
+    {
+        return view('testimony');
+    }
+
 }

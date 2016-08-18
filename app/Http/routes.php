@@ -18,6 +18,12 @@ Route::get('/', 'StaticController@about');
 
 Route::get('/services', 'StaticController@services');
 
+Route::get('/politics', 'StaticController@politics');
+
+Route::get('/property', 'StaticController@property');
+
+Route::get('/testimony', 'StaticController@testimony');
+
 // MAIL
 Route::get('/contacto', 'ContactController@contact');
 
