@@ -8,7 +8,9 @@
         <input type="hidden" name="id">
         @include('post.form')
 
-        <button type="submit" class="btn btn-primary">Actualizar</button>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Actualizar</button>
+        </div>
     </form>
 
     @include('shared.message')
