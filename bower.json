@@ -20,6 +20,7 @@
     "font-awesome": "Font-Awesome#^4.6.3",
     "bootstrap": "^3.3.6",
     "select2": "^4.0.3",
-    "summernote": "^0.8.1"
+    "summernote": "^0.8.1",
+    "datetimepicker": "^2.5.4"
   }
 }
