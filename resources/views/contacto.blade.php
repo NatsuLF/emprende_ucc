@@ -33,14 +33,31 @@
     </div>
 
     <div class="col-md-6">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15585.884755864723!2d-86.87688622724608!3d12.418294516548364!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1465810316033"
-            width="100%"
-            height="400"
-            frameborder="0"
-            style="border: 0;"
-            allowfullscreen>
-        </iframe>
+        <div class="well well-sm">
+            <p><i class="fa fa-map-o" aria-hidden="true"></i> {{ trans('messages.direction') }}</p>
+            <p>{{ Config::get('Contact.address') }}</p>
+
+            <p><i class="fa fa-mobile" aria-hidden="true"></i> {{ trans('messages.phones') }}</p>
+            <ul>
+                @foreach (Config::get('Contact.telephones') as $telephone)
+                    <li>{{ $telephone }}</li>
+                @endforeach
+            </ul>
+
+            <p><i class="fa fa-envelope-o" aria-hidden="true"></i> {{ trans('messages.mail') }}</p>
+            <p>{{ Config::get('Contact.email') }}</p>
+        </div>
+
+        <div class="well well-sm">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15585.884755864723!2d-86.87688622724608!3d12.418294516548364!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1465810316033"
+                width="100%"
+                height="400"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen>
+            </iframe>
+        </div>
     </div>
 @endsection
 

@@ -1,4 +1,3 @@
-<!-- Sidebar -->
 <div id="sidebar-wrapper">
     <ul class="sidebar-nav">
         <li class="sidebar-brand">
@@ -16,6 +15,11 @@
             <a href="{{ url('/tags') }}">
                 <i class="fa fa-tags fa-lg" aria-hidden="true"></i>
                     Categorias
+            </a>
+        </li>
+        <li role="presentation" class="{{ $controller == 'ActivityController' ? 'active' : 'no-active' }}">
+            <a href="{{ url('activities') }}">
+              <i class="fa fa-bell-o fa-lg" aria-hidden="true"></i> Actividades
             </a>
         </li>
         <hr>

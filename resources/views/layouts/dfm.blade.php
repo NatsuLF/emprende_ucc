@@ -9,8 +9,9 @@
 
     <link rel="stylesheet" href="{{ URL::asset('components/bootstrap/dist/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('components/font-awesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('components/datetimepicker/build/jquery.datetimepicker.min.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('stylesheets/dashboard/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('stylesheets/simple-sidebar.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('stylesheets/simple-sidebar.css') }}">
 </head>
 
 <body>
@@ -31,7 +32,9 @@
     </div>
 
     <script src="{{ asset('components/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ asset('components/datetimepicker/build/jquery.datetimepicker.full.min.js') }}"></script>
     <script src="{{ asset('components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/activity.js') }}"></script>
 
     <script>
     $("#menu-toggle").click(function(e) {

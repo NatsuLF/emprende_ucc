@@ -107,3 +107,36 @@ Route::post('user/update_password', [
     'uses' => 'UserController@update_password',
     'middleware' => 'auth'
 ]);
+
+// ACTIVITY
+Route::get('activities', [
+    'as' => 'activity_list',
+    'uses' => 'ActivityController@index',
+    'middleware' => 'auth'
+]);
+
+Route::get('activities/create', [
+    'as' => 'activity',
+    'uses' => 'ActivityController@create',
+    'middleware' => 'auth'
+]);
+
+Route::post('activities/create', [
+    'uses' => 'ActivityController@save',
+    'middleware' => 'auth'
+]);
+
+Route::get('activities/edit/{activity}', [
+    'uses' => 'ActivityController@edit',
+    'middleware' => 'auth'
+]);
+
+Route::post('activities/update/{activity}',[
+    'uses' => 'ActivityController@update',
+    'middleware' => 'auth'
+]);
+
+Route::delete('activities/{activity}', [
+    'uses' => 'ActivityController@delete',
+    'middleware' => 'auth'
+]);

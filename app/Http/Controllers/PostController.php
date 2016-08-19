@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use DB;
 use App\Tag;
 use App\Post;
+use App\Activity;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
@@ -74,8 +75,9 @@ class PostController extends Controller
     public function blog()
     {
         $posts = Post::where('published', '=', TRUE)->orderBy('created_at', 'desc')->get();
+        $activities = Activity::all();
 
-        return view('news', ['posts' => $posts]);
+        return view('news', ['posts' => $posts, 'activities' => $activities]);
     }
 
     public function edit(Post $post)

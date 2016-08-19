@@ -32,5 +32,8 @@ return [
     'name' => 'Nombre',
     'mail' => 'Correo',
     'message' => 'Mensaje',
-    'grats' =>  'Gracias por escribirnos !!! , pronto te contactaremos.'
+    'grats' =>  'Gracias por escribirnos !!! , pronto te contactaremos.',
+
+        // ACTIVITIES
+    'activities' => 'Actividades',
 ];

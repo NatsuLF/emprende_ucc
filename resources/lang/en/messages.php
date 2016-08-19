@@ -33,5 +33,8 @@ Becoming a leader in the manufacture of hives and distribution and customer serv
     'name' => 'Name',
     'mail' => 'Mail',
     'message' => 'Message',
-    'grats' =>  'Thanks for writing to us !!! Soon we will contact you.'
+    'grats' =>  'Thanks for writing to us !!! Soon we will contact you.',
+
+    // ACTIVITIES
+    'activities' => 'Activities',
 ];
