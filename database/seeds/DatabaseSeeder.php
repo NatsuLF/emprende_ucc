@@ -5,6 +5,7 @@ use Illuminate\Database\Seeder;
 use App\User;
 use App\Post;
 use App\Tag;
+use App\Activity;
 
 class DatabaseSeeder extends Seeder
 {
@@ -76,6 +77,19 @@ class DatabaseSeeder extends Seeder
         $this->command->info('Linking users with posts');
             $default_user->posts()->save($post1);
             $another_default_user->posts()->save($post2);
+
+        $this->command->info('Seeding activities');
+        $today = new DateTime();
+        Activity::create([
+          'date' => $today->add(new DateInterval('P15D')),
+          'location' => 'Some address goes here',
+          'name' => 'Activity name'
+        ]);
+        Activity::create([
+          'date' => $today->add(new DateInterval('P10D')),
+          'location' => 'Another address goes here',
+          'name' => 'Another activity name'
+        ]);
 
         $this->command->info('Seeding ended with no problems');
     }
