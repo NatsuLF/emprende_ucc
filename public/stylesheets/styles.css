@@ -108,6 +108,10 @@ footer {
 }
 
 /* OVERWRITING BOOTSTRAP*/
+.services {
+  height: 282px;
+}
+
 .navbar-default {
   clear: both;
   border: none;
