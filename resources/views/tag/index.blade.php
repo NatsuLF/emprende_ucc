@@ -11,8 +11,7 @@
                 <col span="1" style="width: 5%;">
             </colgroup>
             <thead>
-                <th>Etiquetas</th>
-                <th></th>
+                <th colspan="3">Categorias</th>
             </thead>
             <tbody>
                 @foreach ($tags as $tag)

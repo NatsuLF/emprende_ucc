@@ -12,9 +12,7 @@
                 <col span="1" style="width: 5%;">
             </colgroup>
             <thead>
-                <th>Posts</th>
-                <th></th>
-                <th></th>
+                <th colspan="4">Posts</th>
             </thead>
             <tbody>
                 @foreach ($posts as $post)
