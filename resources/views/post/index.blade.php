@@ -24,7 +24,8 @@
                             @if ($post->published == TRUE)
                                 <i class="fa fa-check-square-o fa-lg fa-fw" aria-hidden="true"></i>
                             @else
-                                <i class="fa fa-file-text-o fa-lg fa-fw" aria-hidden="true"></i>
+                                <i class="fa fa-square-o fa-lg fa-fw" aria-hidden="true"></i>
+
                             @endif
                         </td>
                         <td>
