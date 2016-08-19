@@ -3,11 +3,10 @@
 @section('title', 'Politicas')
 
 @section('content')
-
-    <div class="col-md-1"></div>
-        <div class="col-md-10 text-justify">
+    <div class="col-md-12 text-justify">
+        <div class="well jumbotron">
             <div class="page-header">
-              <h1>Politicas del PEIDE</h1>
+              <h2>Politicas del PEIDE</h2>
             </div>
             <p>
                 Hay, al menos, tres cuestiones clave relacionadas con el contexto económico de Nicaragua
@@ -81,8 +80,8 @@
             </p>
 
             <a href="https://drive.google.com/file/d/0B0qJycjoKzWpaHE2SEJ0X3V0RGc/view?usp=sharing" class="btn btn-default" title="Politica emprendimiento" target="_blank">
-                <i class="fa fa-cloud-download" aria-hidden="true"></i> Politica de emprendedurismo 2016
+                <i class="fa fa-cloud-download" aria-hidden="true"></i> Descargar pdf
             </a>
         </div>
-    <div class="col-md-1"></div>
+    </div>
 @endsection

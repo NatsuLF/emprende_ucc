@@ -3,10 +3,10 @@
 @section('title', 'Propiedad Intelectual')
 
 @section('content')
-    <div class="col-md-1"></div>
-        <div class="col-md-10 text-justify">
+    <div class="col-md-12 text-justify">
+        <div class="well jumbotron">
             <div class="page-header">
-              <h1>Propiedad Intelectual</h1>
+              <h2>Propiedad Intelectual</h2>
             </div>
                 <p>
                     La construcción de una política que promueve mejores prácticas comerciales en
@@ -18,5 +18,5 @@
                     Diseños industriales, marcas distintivas, entre otros.
                 </p>
         </div>
-    <div class="col-md-1"></div>
+    </div>
 @endsection

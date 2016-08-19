@@ -3,11 +3,10 @@
 @section('title', 'Conocenos')
 
 @section('content')
-
 	<div class="col-md-6">
 		<div class="panel panel-success">
 			<div class="panel-heading">
-				<h3 class="panel-title">Desarrollo de Idea - Empresa</h3>
+				<h3 class="panel-title">Desarrollo de idea - empresa</h3>
 			</div>
 			<div class="panel-body">
 				<p>
@@ -18,6 +17,9 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
+	            <a href="https://drive.google.com/file/d/0B0qJycjoKzWpaHE2SEJ0X3V0RGc/view?usp=sharing" class="btn btn-default btn-block" title="Politica emprendimiento" target="_blank">
+	                <i class="fa fa-cloud-download" aria-hidden="true"></i> Descargar pdf
+	            </a>
 			</div>
 		</div>
 	</div>
@@ -36,6 +38,9 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
+	            <a href="https://drive.google.com/file/d/0B0qJycjoKzWpaHE2SEJ0X3V0RGc/view?usp=sharing" class="btn btn-default btn-block" title="Politica emprendimiento" target="_blank">
+	                <i class="fa fa-cloud-download" aria-hidden="true"></i> Descargar pdf
+	            </a>
 			</div>
 		</div>
 	</div>
@@ -54,6 +59,9 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
+	            <a href="https://drive.google.com/file/d/0B0qJycjoKzWpaHE2SEJ0X3V0RGc/view?usp=sharing" class="btn btn-default btn-block" title="Politica emprendimiento" target="_blank">
+	                <i class="fa fa-cloud-download" aria-hidden="true"></i> Descargar pdf
+	            </a>
 			</div>
 		</div>
 	</div>
@@ -72,9 +80,13 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
+	            <a href="https://drive.google.com/file/d/0B0qJycjoKzWpaHE2SEJ0X3V0RGc/view?usp=sharing" class="btn btn-default btn-block" title="Politica emprendimiento" target="_blank">
+	                <i class="fa fa-cloud-download" aria-hidden="true"></i> Descargar pdf
+	            </a>
 			</div>
 		</div>
 	</div>
+
 	<div class="col-md-6">
 		<div class="panel panel-success">
 			<div class="panel-heading">
@@ -89,9 +101,13 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
+	            <a href="https://drive.google.com/file/d/0B0qJycjoKzWpaHE2SEJ0X3V0RGc/view?usp=sharing" class="btn btn-default btn-block" title="Politica emprendimiento" target="_blank">
+	                <i class="fa fa-cloud-download" aria-hidden="true"></i> Descargar pdf
+	            </a>
 			</div>
 		</div>
 	</div>
+
 	<div class="col-md-6">
 		<div class="panel panel-success">
 			<div class="panel-heading">
@@ -106,6 +122,9 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
+	            <a href="https://drive.google.com/file/d/0B0qJycjoKzWpaHE2SEJ0X3V0RGc/view?usp=sharing" class="btn btn-default btn-block" title="Politica emprendimiento" target="_blank">
+	                <i class="fa fa-cloud-download" aria-hidden="true"></i> Descargar pdf
+	            </a>
 			</div>
 		</div>
 	</div>
