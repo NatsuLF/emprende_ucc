@@ -7,7 +7,3 @@
     @include('shared.objetives')
     @include('shared.friends_pages')
 @endsection
-
-@section('footer')
-    @include('shared.footer')
-@endsection
