@@ -1,7 +1,7 @@
 <br><br>
 <h3>
     <span class="label label-primary">
-        <i class="fa fa-tags" aria-hidden="true"></i>&nbsp; Categorias
+        <i class="fa fa-tags fa-fw" aria-hidden="true"></i> Categorias
     </span>
 </h3>
 
@@ -28,7 +28,7 @@
 
 <h3>
     <span class="label label-primary">
-        <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>&nbsp; Estado
+        <i class="fa fa-rss fa-fw" aria-hidden="true"></i> Estado
     </span>
 </h3>
 
