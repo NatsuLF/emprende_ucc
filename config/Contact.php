@@ -4,6 +4,6 @@ use Illuminate\Support\Facades\Config;
 
 return [
     'address' => 'Costado Oeste Campus Medico - UNAN-Leon',
-    'email' => 'emprende_ucc@emprende.com',
-    'telephones' => ['2311-3456', '2311-6754']
+    'email' => 'juan.mairena@ucc.edu.ni',
+    'telephones' => ['2311-0811', '8810-1599']
 ];
