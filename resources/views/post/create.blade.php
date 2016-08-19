@@ -11,7 +11,7 @@
             <button type="submit" id="borrador" class="btn btn-primary">Guardar como borrador</button>
         </div>
     </form>
-
+    <br>
     @include('shared.message')
     @include('common.errors')
 @endsection

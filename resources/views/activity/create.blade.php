@@ -20,13 +20,12 @@
 
         <button type="submit" class="btn btn-primary">Confirmar</button>
     </form>
-
+    <br>
     @if (session('status'))
         <div class="alert alert-success">
             {{ session('status') }}
         </div>
     @endif
-
     <p>
         @if (count($errors) > 0)
             <ul>

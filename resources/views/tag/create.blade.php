@@ -9,8 +9,7 @@
 
         <button type="submit" class="btn btn-primary"><i class="fa fa-plus-circle fa-fw" aria-hidden="true"></i>&nbsp; Crear</button>
     </form>
-
+    <br>
     @include('shared.message')
-
     @include('common.errors')
 @endsection
