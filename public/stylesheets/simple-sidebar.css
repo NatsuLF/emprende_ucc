@@ -8,6 +8,13 @@
     overflow-x: hidden;
  }
 
+/* Overrride CSS Boostrap */
+.dropdown-menu {
+    background: none;
+    min-width: 100%;
+}
+
+
 /* Toggle Styles */
 
 #wrapper {

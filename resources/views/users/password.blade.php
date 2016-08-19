@@ -10,17 +10,39 @@
         <small>{{ $current_user->email }}</small>
         </p>
     </div>
-    @include('shared.user_navs')
+
+    <ul class="nav nav-tabs tabs">
+        <li role="presentation" class="{{ $action == 'profile' ? 'active' : '' }}">
+            <a href="{{ url('user/profile') }}" role="tab">Perfil</a>
+        </li>
+        <li role="presentation" class="{{ $action == 'password' ? 'active' : '' }}">
+            <a href="{{ url('user/password') }}" role="tab">Cambiar contraseña</a>
+        </li>
+    </ul>
 
     <form action="/user/update_password" method="POST" autocomplete="off" novalidate>
         {{ csrf_field() }}
-        @include('shared.user_update_pass')
+        <div class="form-group">
+            <label for="currentPassword">Contraseña actual</label>
+            <input type="password" id="currentPassword" class="form-control" name="currentPassword" required>
+        </div>
 
-        <button type="submit" class="btn btn-primary">Actualizar</button>
+        <div class="form-group">
+            <label for="newPassword">Nueva contraseña</label>
+            <input type="password" class="form-control" name="newPassword" required>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmPassword">Repite la contraseña</label>
+            <input type="password" class="form-control" name="confirmPassword" required>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Actualizar</button>
+        </div>
     </form>
 
     @include('shared.message')
-
     @if (count($errors) > 0)
         <div class="alert alert-danger">
             <ul>

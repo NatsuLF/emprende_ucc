@@ -11,13 +11,30 @@
         </p>
     </div>
 
-    @include('shared.user_navs')
+    <ul class="nav nav-tabs tabs">
+        <li role="presentation" class="{{ $action == 'profile' ? 'active' : '' }}">
+            <a href="{{ url('user/profile') }}" role="tab">Perfil</a>
+        </li>
+        <li role="presentation" class="{{ $action == 'password' ? 'active' : '' }}">
+            <a href="{{ url('user/password') }}" role="tab">Cambiar contraseña</a>
+        </li>
+    </ul>
 
     <form action="{{ '/user/profile' }}" method="post" autocomplete="off" novalidate>
         {{ csrf_field() }}
-        @include('shared.form_user')
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input id="name" name="name" value="{{ $current_user->name }}" class="form-control" required>
+        </div>
 
-        <button type="submit" class="btn btn-primary">Actualizar</button>
+        <div class="form-group">
+            <label for="email">Correo</label>
+            <input type="email" id="email" class="form-control" name="email" value="{{ $current_user->email }}" required>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Actualizar</button>
+        </div>
     </form>
 
     @include('shared.message')

@@ -15,8 +15,6 @@
 @endsection
 
 @section('content')
-    <a href="{{ url('activities') }}">Regresar</a>
-
     <form action="{{ url('activities/update/' .$activity->id) }}" method="post" autocomplete="off">
         {{ csrf_field() }}
         @include('activity.form')

@@ -2,7 +2,7 @@
     <ul class="sidebar-nav">
         <li class="sidebar-brand">
             <a href="/posts">
-                PEIDE
+                Panel de Administración
             </a>
         </li>
         <li role="presentation" class="{{ $controller == 'PostController' ? 'active' : 'no-active' }}">
@@ -35,20 +35,19 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                 {{ Auth::user()->name }} <span class="caret"></span>
             </a>
-
+            <ul class="nav dropdown-menu">
                 <li>
                     <a href="{{ url('/user/profile') }}">
                         <i class="fa fa-btn fa-user"></i> Profile
                     </a>
                 </li>
-                <li class="divider"></li>
                 <li>
                     <a href="{{ url('/logout') }}">
                         <i class="fa fa-btn fa-sign-out"></i> Logout
                     </a>
                 </li>
+            </ul>
         </li>
         @endif
     </ul>
 </div>
-<!-- /#sidebar-wrapper -->
