@@ -22,15 +22,14 @@
                         </td>
                         <td>
                             @if ($post->published == TRUE)
-                                <i class="fa fa-check-square-o fa-lg fa-fw" aria-hidden="true"></i>
+                                    <i class="fa fa-check-square-o btn btn-sm" aria-hidden="true"></i>
                             @else
-                                <i class="fa fa-square-o fa-lg fa-fw" aria-hidden="true"></i>
-
+                                    <i class="fa fa-square-o btn btn-sm" aria-hidden="true"></i>
                             @endif
                         </td>
                         <td>
-                            <a class="btn btn-primary btn-xs" href="{{ 'posts/' .$post->id }}">
-                            <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
+                            <a class="btn btn-primary btn-sm" href="{{ 'posts/' .$post->id }}">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
                             </a>
                         </td>
                         <td>
@@ -38,8 +37,8 @@
                                 {{ csrf_field() }}
                                 {{ method_field('DELETE') }}
 
-                                <button type="submit" class="btn btn-danger btn-xs">
-                                    <i class="fa fa-trash fa-lg"></i>
+                                <button type="submit" class="btn btn-danger btn-sm">
+                                    <i class="fa fa-trash"></i>
                                 </button>
                             </form>
                         </td>
