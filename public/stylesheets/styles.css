@@ -2,8 +2,6 @@ body {
   background-color: #DDD;
   padding-bottom: 0px;
   margin-bottom: 50px;
-  position: relative;
-  min-height: 100%;
 }
 
 .logos {
@@ -11,6 +9,10 @@ body {
   margin-top: 0px;
   padding-top: 0px;
   margin-bottom: 5px;
+}
+
+.login {
+  margin-top: 10%;
 }
 
 

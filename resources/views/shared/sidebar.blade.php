@@ -38,12 +38,12 @@
             <ul class="nav dropdown-menu">
                 <li>
                     <a href="{{ url('/user/profile') }}">
-                        <i class="fa fa-btn fa-user"></i> Profile
+                        <i class="fa fa-user fa-lg"></i> Profile
                     </a>
                 </li>
                 <li>
                     <a href="{{ url('/logout') }}">
-                        <i class="fa fa-btn fa-sign-out"></i> Logout
+                        <i class="fa fa-sign-out fa-lg"></i>Logout
                     </a>
                 </li>
             </ul>
